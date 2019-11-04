@@ -1,0 +1,3902 @@
+fileFormatVersion: 2
+guid: 4f89c3e9b9dabb749844dc19fab8105a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8107496303809395837
+    second: Han_Extra_0
+  - first:
+      213: 759704364689492403
+    second: Han_Extra_1
+  - first:
+      213: -3098944162473565706
+    second: Han_Extra_2
+  - first:
+      213: 6028717438817460296
+    second: Han_Extra_3
+  - first:
+      213: 3870748904100536257
+    second: Han_Extra_4
+  - first:
+      213: -2841894308897727160
+    second: Han_Extra_5
+  - first:
+      213: 8008229571974425776
+    second: Han_Extra_6
+  - first:
+      213: -1686326280978225643
+    second: Han_Extra_7
+  - first:
+      213: 3749559742478031782
+    second: Han_Extra_8
+  - first:
+      213: -4421150662452616502
+    second: Han_Extra_9
+  - first:
+      213: 2643411724744363995
+    second: Han_Extra_10
+  - first:
+      213: -8730302761074377076
+    second: Han_Extra_11
+  - first:
+      213: -909524182440359557
+    second: Han_Extra_12
+  - first:
+      213: -2415514895131194845
+    second: Han_Extra_13
+  - first:
+      213: -4952782194141496154
+    second: Han_Extra_14
+  - first:
+      213: -358206159975446207
+    second: Han_Extra_15
+  - first:
+      213: 1895374752428505341
+    second: Han_Extra_16
+  - first:
+      213: 1595449369591011501
+    second: Han_Extra_17
+  - first:
+      213: -5893117714485099619
+    second: Han_Extra_18
+  - first:
+      213: -8186484532740623338
+    second: Han_Extra_19
+  - first:
+      213: -6331921271410903553
+    second: Han_Extra_20
+  - first:
+      213: -8990735041532915698
+    second: Han_Extra_21
+  - first:
+      213: 250653502114046936
+    second: Han_Extra_22
+  - first:
+      213: -368520018854483825
+    second: Han_Extra_23
+  - first:
+      213: -2488234049773441926
+    second: Han_Extra_24
+  - first:
+      213: 1766720930020915691
+    second: Han_Extra_25
+  - first:
+      213: -3977795388971188562
+    second: Han_Extra_26
+  - first:
+      213: 8422853123959551294
+    second: Han_Extra_27
+  - first:
+      213: -6821675822246805984
+    second: Han_Extra_28
+  - first:
+      213: 688414123539030148
+    second: Han_Extra_29
+  - first:
+      213: 3142836127115801596
+    second: Han_Extra_30
+  - first:
+      213: 5891958136047519491
+    second: Han_Extra_31
+  - first:
+      213: -934512491553557900
+    second: Han_Extra_32
+  - first:
+      213: -883070848545971610
+    second: Han_Extra_33
+  - first:
+      213: -4061274772542397684
+    second: Han_Extra_34
+  - first:
+      213: -731461875446038730
+    second: Han_Extra_35
+  - first:
+      213: -974595751363409665
+    second: Han_Extra_36
+  - first:
+      213: 1835558202879274916
+    second: Han_Extra_37
+  - first:
+      213: 5033973989581691980
+    second: Han_Extra_38
+  - first:
+      213: -1273603781116509730
+    second: Han_Extra_39
+  - first:
+      213: 6846997378749397538
+    second: Han_Extra_40
+  - first:
+      213: -8742344623925207975
+    second: Han_Extra_41
+  - first:
+      213: 3870801851738685637
+    second: Han_Extra_42
+  - first:
+      213: -603948448650658839
+    second: Han_Extra_43
+  - first:
+      213: -2519110942712865886
+    second: Han_Extra_44
+  - first:
+      213: 7381539276570214619
+    second: Han_Extra_45
+  - first:
+      213: -814090551014187977
+    second: Han_Extra_46
+  - first:
+      213: 6713522661899265993
+    second: Han_Extra_47
+  - first:
+      213: -8347190430130135280
+    second: Han_Extra_48
+  - first:
+      213: 8747237427180357935
+    second: Han_Extra_49
+  - first:
+      213: 1016998611764480902
+    second: Han_Extra_50
+  - first:
+      213: 678276583889104881
+    second: Han_Extra_51
+  - first:
+      213: -176885233735789772
+    second: Han_Extra_52
+  - first:
+      213: -3526245382229411394
+    second: Han_Extra_53
+  - first:
+      213: 431040614493023554
+    second: Han_Extra_54
+  - first:
+      213: 3374362539312083060
+    second: Han_Extra_55
+  - first:
+      213: 1663740496662015596
+    second: Han_Extra_56
+  - first:
+      213: -5868117040768434693
+    second: Han_Extra_57
+  - first:
+      213: -549589120273840943
+    second: Han_Extra_58
+  - first:
+      213: -5191258226880025947
+    second: Han_Extra_59
+  - first:
+      213: -1803193628413746827
+    second: Han_Extra_60
+  - first:
+      213: 6161350381063498495
+    second: Han_Extra_61
+  - first:
+      213: 6693851075351728993
+    second: Han_Extra_62
+  - first:
+      213: 731410701702221637
+    second: Han_Extra_63
+  - first:
+      213: -6884989054336132825
+    second: Han_Extra_64
+  - first:
+      213: 1692028520757983317
+    second: Han_Extra_65
+  - first:
+      213: 3624579341109035136
+    second: Han_Extra_66
+  - first:
+      213: 2699745439307200857
+    second: Han_Extra_67
+  - first:
+      213: -8651292875993679391
+    second: Han_Extra_68
+  - first:
+      213: 1005887424319591582
+    second: Han_Extra_69
+  - first:
+      213: 7400328508408053160
+    second: Han_Extra_70
+  - first:
+      213: 6144354451925366597
+    second: Han_Extra_71
+  - first:
+      213: -7591804061783270786
+    second: Han_Extra_72
+  - first:
+      213: -3116935357984993732
+    second: Han_Extra_73
+  - first:
+      213: -617955681983818089
+    second: Han_Extra_74
+  - first:
+      213: -3475978166046829239
+    second: Han_Extra_75
+  - first:
+      213: 9060755453913225221
+    second: Han_Extra_76
+  - first:
+      213: -3670924981970181986
+    second: Han_Extra_77
+  - first:
+      213: 6177643566879057170
+    second: Han_Extra_78
+  - first:
+      213: 8040329626044427602
+    second: Han_Extra_79
+  - first:
+      213: -2474185169561882882
+    second: Han_Extra_80
+  - first:
+      213: 8454237951458303637
+    second: Han_Extra_81
+  - first:
+      213: -6420681091508059765
+    second: Han_Extra_82
+  - first:
+      213: 6260715024836632301
+    second: Han_Extra_83
+  - first:
+      213: 3806272930860108153
+    second: Han_Extra_84
+  - first:
+      213: -1436735943481802996
+    second: Han_Extra_85
+  - first:
+      213: 766994528081660343
+    second: Han_Extra_86
+  - first:
+      213: 6175943434495528300
+    second: Han_Extra_87
+  - first:
+      213: 3197022273369168488
+    second: Han_Extra_88
+  - first:
+      213: 1235769589680403806
+    second: Han_Extra_89
+  - first:
+      213: 1161477111928278910
+    second: Han_Extra_90
+  - first:
+      213: 6578739588723576770
+    second: Han_Extra_91
+  - first:
+      213: -4324715033420085120
+    second: Han_Extra_92
+  - first:
+      213: 4921845983095113430
+    second: Han_Extra_93
+  - first:
+      213: -4282053978282147862
+    second: Han_Extra_94
+  - first:
+      213: 36960842503241810
+    second: Han_Extra_95
+  - first:
+      213: 6119096695546337703
+    second: Han_Extra_96
+  - first:
+      213: 1441047035979834131
+    second: Han_Extra_97
+  - first:
+      213: 8167018926086957404
+    second: Han_Extra_98
+  - first:
+      213: -196910109521133210
+    second: Han_Extra_99
+  - first:
+      213: -3100276858963925517
+    second: Han_Extra_100
+  - first:
+      213: 5583863186861050363
+    second: Han_Extra_101
+  - first:
+      213: -3613826037159192528
+    second: Han_Extra_102
+  - first:
+      213: 2459075986749684312
+    second: Han_Extra_103
+  - first:
+      213: 588449552126805398
+    second: Han_Extra_104
+  - first:
+      213: 5994035565858830136
+    second: Han_Extra_105
+  - first:
+      213: -5037237428973033712
+    second: Han_Extra_106
+  - first:
+      213: -265995137472436854
+    second: Han_Extra_107
+  - first:
+      213: -4792661795329727125
+    second: Han_Extra_108
+  - first:
+      213: 432633091644745327
+    second: Han_Extra_109
+  - first:
+      213: 8161385370264606569
+    second: Han_Extra_110
+  - first:
+      213: -8081930050147028846
+    second: Han_Extra_111
+  - first:
+      213: -1150336086572133497
+    second: Han_Extra_112
+  - first:
+      213: -8286570231536969627
+    second: Han_Extra_113
+  - first:
+      213: -9040195723985961626
+    second: Han_Extra_114
+  - first:
+      213: -6657074791167697452
+    second: Han_Extra_115
+  - first:
+      213: 152038755838989880
+    second: Han_Extra_116
+  - first:
+      213: 5118137176574849323
+    second: Han_Extra_117
+  - first:
+      213: 8576238163466072381
+    second: Han_Extra_118
+  - first:
+      213: -4516269245410636000
+    second: Han_Extra_119
+  - first:
+      213: -8718690592398898285
+    second: Han_Extra_120
+  - first:
+      213: -529086570401394261
+    second: Han_Extra_121
+  - first:
+      213: 3484859354714034836
+    second: Han_Extra_122
+  - first:
+      213: -5845880492697300783
+    second: Han_Extra_123
+  - first:
+      213: 8376766232731846296
+    second: Han_Extra_124
+  - first:
+      213: -8507615701246933788
+    second: Han_Extra_125
+  - first:
+      213: 8686743773089847096
+    second: Han_Extra_126
+  - first:
+      213: -1914851275659160331
+    second: Han_Extra_127
+  - first:
+      213: 2687465780077752880
+    second: Han_Extra_128
+  - first:
+      213: -7809185553372034737
+    second: Han_Extra_129
+  - first:
+      213: -4562358507070816168
+    second: Han_Extra_130
+  - first:
+      213: -7546274574004514539
+    second: Han_Extra_131
+  - first:
+      213: 3854215092929512179
+    second: Han_Extra_132
+  - first:
+      213: -2760852870696472219
+    second: Han_Extra_133
+  - first:
+      213: -3121653617069950119
+    second: Han_Extra_134
+  - first:
+      213: 1739286049276025182
+    second: Han_Extra_135
+  - first:
+      213: -2270179368854235592
+    second: Han_Extra_136
+  - first:
+      213: 3752933687430716509
+    second: Han_Extra_137
+  - first:
+      213: -8264959530404675510
+    second: Han_Extra_138
+  - first:
+      213: -7399701222817273404
+    second: Han_Extra_139
+  - first:
+      213: -2326980123096752917
+    second: Han_Extra_140
+  - first:
+      213: 572035703423657058
+    second: Han_Extra_141
+  - first:
+      213: -719999071418635003
+    second: Han_Extra_142
+  - first:
+      213: -2911431188739483407
+    second: Han_Extra_143
+  - first:
+      213: 6336787446474336180
+    second: Han_Extra_144
+  - first:
+      213: 1794869669889923578
+    second: Han_Extra_145
+  - first:
+      213: 2114189241973743510
+    second: Han_Extra_146
+  - first:
+      213: 5971385957470854703
+    second: Han_Extra_147
+  - first:
+      213: 7180992907401448548
+    second: Han_Extra_148
+  - first:
+      213: -5968960803327665722
+    second: Han_Extra_149
+  - first:
+      213: -7658538915464787580
+    second: Han_Extra_150
+  - first:
+      213: -4369871559273225856
+    second: Han_Extra_151
+  - first:
+      213: 726995036671247423
+    second: Han_Extra_152
+  - first:
+      213: 2319448482570597950
+    second: Han_Extra_153
+  - first:
+      213: 329118711741485163
+    second: Han_Extra_154
+  - first:
+      213: -501599564936237083
+    second: Han_Extra_155
+  - first:
+      213: -7716217872820817388
+    second: Han_Extra_156
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Han_Extra_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 744
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46656d5144a71c6469382a11ea005340
+      internalID: 8107496303809395837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 766
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1136905004f11646897aa8cd6c9c7f9
+      internalID: 759704364689492403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 775
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f37b45458560c46be924fd4c4ce574
+      internalID: -3098944162473565706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 742
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25b1e6771c63ce40b6a96d406e16447
+      internalID: 6028717438817460296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 744
+        width: 14
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05b44ac6affca3499b2190e5aec8b17
+      internalID: 3870748904100536257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 774
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c113bf4cd2cad4ea47d190a72ad062
+      internalID: -2841894308897727160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 775
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cfb9a4b8d5e244b8406fdcf5e5fa63
+      internalID: 8008229571974425776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 779
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2cfb863fb58cb4281e670fa230705e
+      internalID: -1686326280978225643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 772
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38eb18db2ab9c54e9aa06f72a3bcaf0
+      internalID: 3749559742478031782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 772
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d50cecff305264b9f8c08b21d8b138
+      internalID: -4421150662452616502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 781
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a04884b5396dd44b80b2311442f9a8a
+      internalID: 2643411724744363995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 776
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec829226f1455a4c9afc65295916977
+      internalID: -8730302761074377076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_12
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 403
+        width: 13
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef16e609997d7bf49832d1090919a9bb
+      internalID: -909524182440359557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_13
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 403
+        width: 31
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4653233cf97bf5749b91a7ac266b5962
+      internalID: -2415514895131194845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_14
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 771
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77c66af6f3fc3e48aac52238f76b6ad
+      internalID: -4952782194141496154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 772
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505c2bc3fd2c15446a09157854881985
+      internalID: -358206159975446207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_16
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 772
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd345e1c5390ead4ab736953a65257a9
+      internalID: 1895374752428505341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_17
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 773
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9053d7a35462c4dadc54e04c2c2c48
+      internalID: 1595449369591011501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_18
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 773
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e23b240c2eed64e83b547f40605609
+      internalID: -5893117714485099619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_19
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 771
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374b3aac8fe47ff44a871c4e35dde4bc
+      internalID: -8186484532740623338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 742
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31c871db7f004a488f2abbf489df5cb
+      internalID: -6331921271410903553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_21
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 745
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b27c38db77f55f48bf058c09cacda05
+      internalID: -8990735041532915698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_22
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 738
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a459208ede870bf47ac0150fab7e0c2f
+      internalID: 250653502114046936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 753
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47864e65d82714945911d622cef7840d
+      internalID: -368520018854483825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 674
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fafd23ef9d3264a8330f17406bf9b6
+      internalID: -2488234049773441926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 674
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212299fa6d5b41f4da9cf354e945f6d8
+      internalID: 1766720930020915691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_26
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 676
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4d02e4296f7144cb2921de6fba96eb
+      internalID: -3977795388971188562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_27
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 674
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb202ebda5593440a530b7e3718b47b
+      internalID: 8422853123959551294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_28
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 673
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cbe679a64d0dd42abaa99ae10b2e15
+      internalID: -6821675822246805984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_29
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 674
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f0196d58c7b104a8b74e3991b8e1de
+      internalID: 688414123539030148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_30
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 673
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76315c6736ccd7745b4542b0f83b47b0
+      internalID: 3142836127115801596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_31
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 674
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da157cb99e501d439ca23def4162478
+      internalID: 5891958136047519491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 600
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487f4c25e1d40d143bb9693012221771
+      internalID: -934512491553557900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_33
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 608
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8e2ee3091c79043954d430c800b589
+      internalID: -883070848545971610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 653
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464bdf6f0bdc8ea46bc9a7fd3f284a2d
+      internalID: -4061274772542397684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_35
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 653
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe38ef28f413174e9f4997a0e16131a
+      internalID: -731461875446038730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_36
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 653
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cdfbd670966be4dbf69faa184761e5
+      internalID: -974595751363409665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_37
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 652
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfcab2ffb82e4445a9481c4394bd8b0
+      internalID: 1835558202879274916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_38
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 648
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee0111e29d9f104583d3cc913f8fdce
+      internalID: 5033973989581691980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_39
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 621
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87cca2799597da49ba7fc774fa940ac
+      internalID: -1273603781116509730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_40
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 616
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb1aad27cd1938448878a26b787bcaa
+      internalID: 6846997378749397538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_41
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 618
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827da1094b2b1cb4a82b193aaa43f542
+      internalID: -8742344623925207975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_42
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 615
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb9853f25105e844b96e98827783eaa
+      internalID: 3870801851738685637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_43
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 630
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1002f2dfb9491b64a85b84391a1d824d
+      internalID: -603948448650658839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_44
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 630
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e93089a9b5ba54684a0e69679393d1
+      internalID: -2519110942712865886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_45
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 630
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73fdc2284fb3244b9d812b93d7ad718
+      internalID: 7381539276570214619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_46
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 550
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcf255f13c27684ca30fede04a9d1a4
+      internalID: -814090551014187977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_47
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 549
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0952eb05434de4c8b5d8010add3e95
+      internalID: 6713522661899265993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_48
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 548
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc41e67537c6294e9c68f865ec7c6c3
+      internalID: -8347190430130135280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_49
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 545
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8b25db23bd41d4fbef910958a90499
+      internalID: 8747237427180357935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_50
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 548
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8751cac702c2443a9d746a54fda512
+      internalID: 1016998611764480902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_51
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 546
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363005b18346c634e87eb43174c09a9a
+      internalID: 678276583889104881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_52
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 547
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed02cc88af9d0dc429e7b6e1bab71ad6
+      internalID: -176885233735789772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_53
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 545
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b87bb21ea60c14fb2a8ae501eb22ec
+      internalID: -3526245382229411394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_54
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 544
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d767bbb930541419c3548c81d4cb10
+      internalID: 431040614493023554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_55
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 484
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435800eeeb3543240a2d861e520a2b33
+      internalID: 3374362539312083060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_56
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 484
+        width: 24
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d518b40883fa60c4882057e1d1de2286
+      internalID: 1663740496662015596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_57
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 486
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d432009c66bfec4c82b9f4a7b812204
+      internalID: -5868117040768434693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_58
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 487
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eea7c51abcc0a043803bf4335f7232d
+      internalID: -549589120273840943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_59
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 487
+        width: 72
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fd4259ba1e52a4da0e4f3f71657c82
+      internalID: -5191258226880025947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_60
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 471
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75104d897f43f204c84f67334316d429
+      internalID: -1803193628413746827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_61
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 470
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4875e076d2896e846b130c96aa060243
+      internalID: 6161350381063498495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_62
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 473
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1401c17e404b6454280da4915d7303c3
+      internalID: 6693851075351728993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_63
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 470
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b5f018672dda84091931ed20367c4f
+      internalID: 731410701702221637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_64
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 471
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6f89bb37bdca247b7c00d49ab757d2
+      internalID: -6884989054336132825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_65
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 471
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901528ce45732bb48b669369c6c5628e
+      internalID: 1692028520757983317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_66
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 412
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74306c44081ddb7478c5645828898258
+      internalID: 3624579341109035136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 411
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f582a6e565187cb45958ecaa46d8304e
+      internalID: 2699745439307200857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_68
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 407
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5fe3269c0a80146b7c04e9c210d9e7
+      internalID: -8651292875993679391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_69
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 406
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cc406cf3c49524fb307ef93c28ca91
+      internalID: 1005887424319591582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_70
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 449
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4602a598f0088464ba40a579490748cc
+      internalID: 7400328508408053160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_71
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 447
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93adfc8f0f5888b40824447a5706e189
+      internalID: 6144354451925366597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_72
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 449
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36a2c6fabc0bf94ea8a24e8709b0469
+      internalID: -7591804061783270786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_73
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 446
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10a8206fe982d24ca5382800cea694b
+      internalID: -3116935357984993732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_74
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 445
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe32b059374b024fa5fa47447a9c6c9
+      internalID: -617955681983818089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_75
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 443
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b4cd2e7210cc944bf4458094bee7a3
+      internalID: -3475978166046829239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_76
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 422
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cfc5acd06156343ae72da0a4bfd4c0
+      internalID: 9060755453913225221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_77
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 419
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f359f576f81012d4facfc54e00169fdf
+      internalID: -3670924981970181986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_78
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 419
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4072b2e68a8114a81581aff8d2941c
+      internalID: 6177643566879057170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_79
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 418
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776a8165bba96414a9b3ca367f3ae9db
+      internalID: 8040329626044427602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_80
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 334
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e600649e518a92e48a272c89e8b7c4a5
+      internalID: -2474185169561882882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_81
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 332
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00a862e5ea31f8478f68722188eb8ef
+      internalID: 8454237951458303637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_82
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 329
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8e8c646da69a84996ee06859e39f6f
+      internalID: -6420681091508059765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_83
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 332
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae3cb3dce990a04580d08f89532d688
+      internalID: 6260715024836632301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_84
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 329
+        width: 80
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5120156d015c34280bdeb26e2c9e59
+      internalID: 3806272930860108153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_85
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 332
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725cd717c3bee2845892db15b92a2b54
+      internalID: -1436735943481802996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_86
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 328
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1df769bf1123304fb97bd3d630e4240
+      internalID: 766994528081660343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_87
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 266
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d47ee990467714baffc98caa0b9226
+      internalID: 6175943434495528300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_88
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 265
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04733d3c48572424ab4bd8907363cb11
+      internalID: 3197022273369168488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_89
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 267
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7d4984fb013bf49a57372cff697838
+      internalID: 1235769589680403806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_90
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 265
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f320bbe541afbc347bb75ec76c20b9c1
+      internalID: 1161477111928278910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_91
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 194
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab84f00fc0f6b0a4681eca45b4b432d6
+      internalID: 6578739588723576770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_92
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 225
+        width: 80
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c770d99b8136a4691030334cb100e0
+      internalID: -4324715033420085120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_93
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 195
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b596e3ba8029a041be50e874ddd39d1
+      internalID: 4921845983095113430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_94
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 194
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30b16e5aa09e424fb7b2c8a1bf167a3
+      internalID: -4282053978282147862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_95
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 193
+        width: 84
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dab04235fe617e4c9509657de2318c0
+      internalID: 36960842503241810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_96
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 194
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cb7b83ca621264ca1e1dab9f81a7a6
+      internalID: 6119096695546337703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_97
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 198
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bb413e5c096784d8dbe65e0c0c11a0
+      internalID: 1441047035979834131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_98
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 190
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce580fc2cbc65e543bdec8dbea10d99a
+      internalID: 8167018926086957404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_99
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 145
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5622f545e46a6844a9e634c1ab5d8643
+      internalID: -196910109521133210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_100
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 143
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f055e4d470d53640af5b98863fe6f02
+      internalID: -3100276858963925517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_101
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 141
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e9334186d9e354f9870b6d35f1fdb9
+      internalID: 5583863186861050363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_102
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 141
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eac71cc072062443b26aad84f16d025
+      internalID: -3613826037159192528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_103
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 171
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cf086c45486f4469bf1d754cf29cf3
+      internalID: 2459075986749684312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_104
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 171
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321f9bfa309c49c4297514b631fcc5d8
+      internalID: 588449552126805398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_105
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 171
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4597d3c6026805488d4954cd6d26292
+      internalID: 5994035565858830136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_106
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 171
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ae522bc511e404db52bfc2340eb63f
+      internalID: -5037237428973033712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_107
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 171
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4958f1539b050614d863982d45d86901
+      internalID: -265995137472436854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_108
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 171
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faee7c7808461fd419145211109895c0
+      internalID: -4792661795329727125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_109
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 171
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1fdee249c19334f84cd9632c81a6d5
+      internalID: 432633091644745327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_110
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 171
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fb8a1c870e0ed438b4425dbfd0811a
+      internalID: 8161385370264606569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_111
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 171
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e1826aaeb0e764cb5c344dea162b03
+      internalID: -8081930050147028846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_112
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 171
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b017ea0b221f2af4eb6139335a2f160f
+      internalID: -1150336086572133497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_113
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 171
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b7bcf78a4f5c941a3b9e4ad9357d6c
+      internalID: -8286570231536969627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_114
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 171
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc56a54ec6ccc545b0af4dd86c7b1ad
+      internalID: -9040195723985961626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_115
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 171
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f229bb408479a384db0e0a1982517f6d
+      internalID: -6657074791167697452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_116
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 171
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8cb3385b8cc924b888f1ad09421e80
+      internalID: 152038755838989880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_117
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 169
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d80d85a0eddaa4c8ee6bb292d776c5
+      internalID: 5118137176574849323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_118
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 171
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9635d4daec1384785c163a492587d1
+      internalID: 8576238163466072381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_119
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 171
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb33488bcee0824e84bd9bbaa5fe1b8
+      internalID: -4516269245410636000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_120
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 171
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1857ce752f1a7e4983cd71c46afc247
+      internalID: -8718690592398898285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_121
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 171
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f213c0a1f0100e47a472fb72ba9f000
+      internalID: -529086570401394261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_122
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 171
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b846e05bc1426e6428499216b27ff9dd
+      internalID: 3484859354714034836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_123
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 171
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d27dd0b9cf10143995bd9445ac27b4
+      internalID: -5845880492697300783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_124
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 171
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2328908ce812e154288c424f59f94239
+      internalID: 8376766232731846296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_125
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 156
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf8343c6fe3663489b34da1a00b0262
+      internalID: -8507615701246933788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_126
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 154
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d9946e2b340e44db7be47fa8a9fc99
+      internalID: 8686743773089847096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_127
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 154
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49de7f71a38f1504ba787bff75861c60
+      internalID: -1914851275659160331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_128
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 156
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536742202593a7946b756dc347b86c91
+      internalID: 2687465780077752880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_129
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 156
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bcda9ef42151141976b09b5e09b583
+      internalID: -7809185553372034737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_130
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 156
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955f4537927048e4780e020418610b27
+      internalID: -4562358507070816168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_131
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 154
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ca061316ccf7043835213f2359720f
+      internalID: -7546274574004514539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_132
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 156
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae56e4ed452d724f9c7f8328aa7017a
+      internalID: 3854215092929512179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_133
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 156
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbf96c6ccb8ec2429637d5981c6b420
+      internalID: -2760852870696472219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_134
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 154
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb36f89fdcaf694e881b40b095aea89
+      internalID: -3121653617069950119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_135
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 154
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf3a1ed803d7fe4989684a6d6437676
+      internalID: 1739286049276025182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_136
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 156
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2e030b1e4151e40982315e7c48914a
+      internalID: -2270179368854235592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_137
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 156
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd98b1a753fc7c49aae2995a8e88ff5
+      internalID: 3752933687430716509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_138
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 91
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb161cb26850524d9bf3e3c2c569e23
+      internalID: -8264959530404675510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_139
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 91
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f1e03fae93c214380ab5c3bc183d94
+      internalID: -7399701222817273404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_140
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 89
+        width: 91
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d3f596500471d4c9d09b371e0eecb8
+      internalID: -2326980123096752917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_141
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 9
+        width: 18
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a72b5f4b147984580b3fe9e9439291
+      internalID: 572035703423657058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_142
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 87
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ce07361168b0b478ad470385b05657
+      internalID: -719999071418635003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_143
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 86
+        width: 80
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7034a4423acce1243b0d05a6a468047a
+      internalID: -2911431188739483407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_144
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 84
+        width: 69
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9b12e1f503e254eaf4a6d99373b313
+      internalID: 6336787446474336180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_145
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 78
+        width: 82
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cf3905af9ca2b459ddb6ceddc56216
+      internalID: 1794869669889923578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_146
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 11
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122ab03d087b1b34195e6a9d32d7bd31
+      internalID: 2114189241973743510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_147
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 12
+        width: 34
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cca8ff6e89bba54bac78a88f1a7638b
+      internalID: 5971385957470854703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_148
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 11
+        width: 23
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbc5e9d727254d4e8efde569ae227e4
+      internalID: 7180992907401448548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_149
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 14
+        width: 39
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e1e19c283d69344a59128f519c3c5c
+      internalID: -5968960803327665722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_150
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 11
+        width: 18
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd64fece439696b4ca2510f631cdbc30
+      internalID: -7658538915464787580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_151
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 12
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b7efd81621f624e8ed0a22d71c8b2d
+      internalID: -4369871559273225856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_152
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 12
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2c913c78d5cf74a974c6245d8c0e5d
+      internalID: 726995036671247423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_153
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 12
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe3f9288eff461489f95c9932eeb860
+      internalID: 2319448482570597950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_154
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 12
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108cbc0fcaaba7b47be8ec13d0e91ab8
+      internalID: 329118711741485163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_155
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 12
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82378770115063e46aa3dfca5d24ad70
+      internalID: -501599564936237083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Extra_156
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 20
+        width: 5
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2859ad3c973ce54e97be4411c0f6eac
+      internalID: -7716217872820817388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 06fe0003427be9b42b66f4e0df949865
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
