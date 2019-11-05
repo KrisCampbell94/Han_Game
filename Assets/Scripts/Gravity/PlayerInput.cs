@@ -1,36 +1,35 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
+using static EntityMover;
+using static Gravity;
 
 public class PlayerInput : MonoBehaviour
 {
-	public enum Direction { Left, Right }
-	public enum Movement { Stopped, Walking, Running }
+	private EventManager eventManager;
 
 	private Direction direction;
 	private Movement movement;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+		eventManager = GetComponent<EventManager>();
+
+		// Current input affecting movement
+		// May differ fron actual movement in case of obstacles, being in the air, etc
 		movement = Movement.Stopped;
+
+		// Current input affecting direction
+		// Likely matches actual direction, since turning around is not hindered by obstacles
 		direction = Direction.Right;
 
-		AddEventDebug("Stopping");
-		AddEventDebug("Walking");
-		AddEventDebug("Running");
+		AddEventDebug("Input_Stopping");
+		AddEventDebug("Input_Walking");
+		AddEventDebug("Input_Running");
 
-		AddEventDebug("TurnLeft");
-		AddEventDebug("TurnRight");
+		AddEventDebug("Input_TurnLeft");
+		AddEventDebug("Input_TurnRight");
+
+		AddEventDebug("Mover_GravityEast");
 	}
-
-	// Update is called once per frame
-	void Update()
-    {
-
-    }
 
 	private void FixedUpdate() {
 		float horizontalMove = Input.GetAxis("Horizontal");
@@ -42,7 +41,7 @@ public class PlayerInput : MonoBehaviour
 				if (horizontalMove != 0) {
 					// Change to moving and call event
 					movement = Movement.Walking;
-					EventManager.InvokeEvent("Walking");
+					eventManager.InvokeEvent("Input_Walking");
 				}
 				break;
 			case Movement.Walking:
@@ -50,7 +49,7 @@ public class PlayerInput : MonoBehaviour
 				if (horizontalMove == 0) {
 					// Change to stopped and call event
 					movement = Movement.Stopped;
-					EventManager.InvokeEvent("Stopping");
+					eventManager.InvokeEvent("Input_Stopping");
 				}
 				break;
 			case Movement.Running:
@@ -58,7 +57,7 @@ public class PlayerInput : MonoBehaviour
 				if (horizontalMove == 0) {
 					// Change to stopped and call event
 					movement = Movement.Stopped;
-					EventManager.InvokeEvent("Stopping");
+					eventManager.InvokeEvent("Input_Stopping");
 				}
 				break;
 		}
@@ -70,7 +69,8 @@ public class PlayerInput : MonoBehaviour
 				if (horizontalMove > 0) {
 					// Change to right and call event
 					direction = Direction.Right;
-					EventManager.InvokeEvent("TurnRight");
+					eventManager.InvokeEvent("Input_TurnRight");
+					GetComponent<Gravity>().ChangeGravity(GravityDirection.East);
 				}
 				break;
 			case Direction.Right:
@@ -78,13 +78,14 @@ public class PlayerInput : MonoBehaviour
 				if (horizontalMove < 0) {
 					// Change to left and call event
 					direction = Direction.Left;
-					EventManager.InvokeEvent("TurnLeft");
+					eventManager.InvokeEvent("Input_TurnLeft");
+					GetComponent<Gravity>().ChangeGravity(GravityDirection.West);
 				}
 				break;
 		}
 	}
 
 	private void AddEventDebug(string eventName) {
-		EventManager.AddListener(eventName, () => { Debug.Log(eventName); });
+		eventManager.AddListener(eventName, () => { Debug.Log(eventName); });
 	}
 }
