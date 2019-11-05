@@ -28,7 +28,8 @@ public class PlayerInput : MonoBehaviour
 		AddEventDebug("Input_TurnLeft");
 		AddEventDebug("Input_TurnRight");
 
-		AddEventDebug("Mover_GravityEast");
+		AddEventDebug("Gravity_West");
+		AddEventDebug("Gravity_East");
 	}
 
 	private void FixedUpdate() {
@@ -70,7 +71,7 @@ public class PlayerInput : MonoBehaviour
 					// Change to right and call event
 					direction = Direction.Right;
 					eventManager.InvokeEvent("Input_TurnRight");
-					GetComponent<Gravity>().ChangeGravity(GravityDirection.East);
+					GetComponent<Gravity>().SetGravityDirection(GravityDirection.East);
 				}
 				break;
 			case Direction.Right:
@@ -79,7 +80,7 @@ public class PlayerInput : MonoBehaviour
 					// Change to left and call event
 					direction = Direction.Left;
 					eventManager.InvokeEvent("Input_TurnLeft");
-					GetComponent<Gravity>().ChangeGravity(GravityDirection.West);
+					GetComponent<Gravity>().SetGravityDirection(GravityDirection.West);
 				}
 				break;
 		}

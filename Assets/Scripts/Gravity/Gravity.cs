@@ -7,69 +7,42 @@ public class Gravity : MonoBehaviour
 	public enum GravityDirection { North, East, South, West }
 
 	public float gravityMagnitude = 9.8f;
-	public float timeToChangeGravity = 0.5f; // Seconds
 
 	private EventManager eventManager;
+	private Rigidbody2D rigidbody2D;
 
-	// Gravity direction relative to world
-	private GravityDirection gravityDirection;
-	// Same as gravityDirection but in vector form
-	private Vector2 gravityDirectionVector;
-	// Temp starting vector when changing gravity
-	private Vector2 gravityStartVector;
-
-	// Current gravity vector, will slowly change towards gravityDirectionVector
+	// Current gravity vector
 	private Vector2 gravityVector;
 
 	// Start is called before the first frame update
 	void Start() {
 		eventManager = GetComponent<EventManager>();
-
-		gravityDirection = GravityDirection.South;
+		rigidbody2D = GetComponent<Rigidbody2D>();
 	}
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 	private void FixedUpdate() {
-		if (gravityVector != gravityDirectionVector) {
-			float clamp = (Time.fixedDeltaTime / timeToChangeGravity);
-			Vector2.Lerp(gravityStartVector, gravityDirectionVector, );
-
-
-		}
-
 		// Apply gravity in selected direction
-		GetComponent<Rigidbody2D>().AddForce(gravityVector * gravityMagnitude);
+		rigidbody2D.AddForce(gravityVector * gravityMagnitude);
 	}
 
-
-	public void ChangeGravity(GravityDirection newDirection) {
-		gravityDirection = newDirection;
-
-		// Store current gravityDirectionVector for gradual change
-		gravityStartVector = gravityVector;
-
+	public void SetGravityDirection(GravityDirection newGravityDirection) {
 		// Set gravityDirectionVector based on gravityDirection
-		switch (gravityDirection) {
+		switch (newGravityDirection) {
 			case GravityDirection.North:
-				gravityDirectionVector = Vector2.up;
+				gravityVector = Vector2.up;
 				break;
 			case GravityDirection.East:
-				gravityDirectionVector = Vector2.right;
+				gravityVector = Vector2.right;
 				break;
 			case GravityDirection.South:
 			default:
-				gravityDirectionVector = Vector2.down;
+				gravityVector = Vector2.down;
 				break;
 			case GravityDirection.West:
-				gravityDirectionVector = Vector2.left;
+				gravityVector = Vector2.left;
 				break;
 		}
 
-		eventManager.InvokeEvent("Mover_Gravity" + newDirection);
+		eventManager.InvokeEvent("Gravity_" + newGravityDirection);
 	}
 }
