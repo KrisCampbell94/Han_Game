@@ -64,9 +64,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraControllerScript.cs" />
     <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
+    <Compile Include="Assets\Scripts\Enemy_NinjaScript.cs" />
+    <Compile Include="Assets\Scripts\HitPointScript.cs" />
+    <Compile Include="Assets\Scripts\KunaiPoolerScript.cs" />
     <Compile Include="Assets\Scripts\KunaiScript.cs" />
+    <Compile Include="Assets\Scripts\NinjaStarPoolerScript.cs" />
     <Compile Include="Assets\Scripts\ObjectPoolerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerEncounterScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/krisc/SchoolDocuments/InteractiveGaming/_COMP394_Sec1_PraticalGameDesign/Group_Project/Han_Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
