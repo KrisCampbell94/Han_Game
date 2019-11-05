@@ -6,6 +6,8 @@ using UnityEngine;
 // https://stackoverflow.com/questions/42034245/unity-eventmanager-with-delegate-instead-of-unityevent
 
 public class EventManager : MonoBehaviour {
+	public bool debug = true;
+
 	// Holds reference to all events
 	private Dictionary<string, Action> events = new Dictionary<string, Action>();
 
@@ -29,6 +31,10 @@ public class EventManager : MonoBehaviour {
 
 	// Invoke all associated listeners
 	public void InvokeEvent(string eventName) {
+		if (debug) {
+			Debug.Log("Invoked " + eventName);
+		}
+
 		// If event exists, invoke all listeners
 		if (events.ContainsKey(eventName)) {
 			events[eventName].Invoke();

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static Gravity;
 
 public class EntityMover : MonoBehaviour
 {
@@ -22,7 +23,12 @@ public class EntityMover : MonoBehaviour
 
 		direction = Direction.Right;
 		movement = Movement.Stopped;
-    }
+
+		eventManager.AddListener("Gravity_North", () => RotateSelfToGravity(GravityDirection.North));
+		eventManager.AddListener("Gravity_East", () => RotateSelfToGravity(GravityDirection.East));
+		eventManager.AddListener("Gravity_South", () => RotateSelfToGravity(GravityDirection.South));
+		eventManager.AddListener("Gravity_West", () => RotateSelfToGravity(GravityDirection.West));
+	}
 
     // Update is called once per frame
     void Update() {
@@ -31,5 +37,13 @@ public class EntityMover : MonoBehaviour
 
 	private void FixedUpdate() {
 
+	}
+
+	private void RotateSelfToGravity(GravityDirection gravityDirection) {
+		Debug.Log(gravityDirection);
+
+		// Lerp
+
+		// Also make camera follow
 	}
 }

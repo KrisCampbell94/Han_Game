@@ -3109,6 +3109,8 @@ GameObject:
   - component: {fileID: 1957089955}
   - component: {fileID: 1957089956}
   - component: {fileID: 1957089957}
+  - component: {fileID: 1957089959}
+  - component: {fileID: 1957089958}
   - component: {fileID: 1957089949}
   m_Layer: 0
   m_Name: Han_Player
@@ -3189,7 +3191,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 30c189d0885840e4ebc57ce8e8721c3c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3315,6 +3317,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3eee3fd70f9164a8bd84eef8dcb63d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+--- !u!114 &1957089958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957089948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b4f15b9ad75c7439da6685379d3a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1957089959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957089948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe5d964d335e5b40926f0e80fd6a040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityMagnitude: 9.8
 --- !u!1 &2093603950
 GameObject:
   m_ObjectHideFlags: 0

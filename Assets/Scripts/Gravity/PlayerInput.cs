@@ -20,16 +20,6 @@ public class PlayerInput : MonoBehaviour
 		// Current input affecting direction
 		// Likely matches actual direction, since turning around is not hindered by obstacles
 		direction = Direction.Right;
-
-		AddEventDebug("Input_Stopping");
-		AddEventDebug("Input_Walking");
-		AddEventDebug("Input_Running");
-
-		AddEventDebug("Input_TurnLeft");
-		AddEventDebug("Input_TurnRight");
-
-		AddEventDebug("Gravity_West");
-		AddEventDebug("Gravity_East");
 	}
 
 	private void FixedUpdate() {
@@ -71,7 +61,9 @@ public class PlayerInput : MonoBehaviour
 					// Change to right and call event
 					direction = Direction.Right;
 					eventManager.InvokeEvent("Input_TurnRight");
-					GetComponent<Gravity>().SetGravityDirection(GravityDirection.East);
+
+					// TODO: Proper controls for gravity manipulation
+					eventManager.InvokeEvent("Input_Gravity_East");
 				}
 				break;
 			case Direction.Right:
@@ -80,13 +72,11 @@ public class PlayerInput : MonoBehaviour
 					// Change to left and call event
 					direction = Direction.Left;
 					eventManager.InvokeEvent("Input_TurnLeft");
-					GetComponent<Gravity>().SetGravityDirection(GravityDirection.West);
+					
+					// TODO: Proper controls for gravity manipulation
+					eventManager.InvokeEvent("Input_Gravity_West");
 				}
 				break;
 		}
-	}
-
-	private void AddEventDebug(string eventName) {
-		eventManager.AddListener(eventName, () => { Debug.Log(eventName); });
 	}
 }
