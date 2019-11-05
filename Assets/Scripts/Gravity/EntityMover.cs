@@ -17,6 +17,12 @@ public class EntityMover : MonoBehaviour
 	// Current grounded state
 	private bool grounded;
 
+	// Rotation Lerping
+	public float timeToRotate = 0.5f; // Seconds
+	private float startTime;
+	private Vector3 startAngle;
+	private float destAngleZ;
+
 	// Start is called before the first frame update
 	void Start() {
 		eventManager = GetComponent<EventManager>();
@@ -36,14 +42,42 @@ public class EntityMover : MonoBehaviour
     }
 
 	private void FixedUpdate() {
+		// If not orientated right
+		if (transform.eulerAngles.z != destAngleZ) {
+			// Gradually move rotation to new angle
+			Vector3 newAngle = startAngle;
+			float rotateDelta = (Time.time - startTime) / timeToRotate;
 
+			newAngle.z = Mathf.Lerp(startAngle.z, destAngleZ, rotateDelta);
+			if (newAngle.z == -90 && rotateDelta >= 1) {
+				newAngle.z = 270;
+			}
+
+			transform.eulerAngles = newAngle;
+		}
 	}
 
 	private void RotateSelfToGravity(GravityDirection gravityDirection) {
-		Debug.Log(gravityDirection);
+		// Store current time and angle
+		startTime = Time.time;
+		startAngle = transform.eulerAngles;
 
-		// Lerp
+		switch (gravityDirection) {
+			case GravityDirection.North:
+				destAngleZ = 180;
+				break;
+			case GravityDirection.East:
+				destAngleZ = 90;
+				break;
+			case GravityDirection.South:
+			default:
+				destAngleZ = 0;
+				break;
+			case GravityDirection.West:
+				destAngleZ = -90;
+				break;
+		}
 
-		// Also make camera follow
+		Debug.Log("start " + startAngle.z + " dest " + destAngleZ);
 	}
 }

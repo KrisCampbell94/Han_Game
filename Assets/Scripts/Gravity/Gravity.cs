@@ -11,14 +11,19 @@ public class Gravity : MonoBehaviour
 	private EventManager eventManager;
 	private Rigidbody2D rBody2D;
 
-	// Current gravity vector
-	private Vector2 gravityVector;
+	// Current gravity direction and vector
+	public GravityDirection gravityDirection { get; private set; }
+	public Vector2 gravityVector { get; private set; }
 
 	// Start is called before the first frame update
 	void Start() {
 		eventManager = GetComponent<EventManager>();
 		rBody2D = GetComponent<Rigidbody2D>();
 
+		// Set initial gravity
+		SetGravityDirection(GravityDirection.South);
+
+		// Change gravity direction based on input events
 		eventManager.AddListener("Input_Gravity_North", () => SetGravityDirection(GravityDirection.North));
 		eventManager.AddListener("Input_Gravity_East", () => SetGravityDirection(GravityDirection.East));
 		eventManager.AddListener("Input_Gravity_South", () => SetGravityDirection(GravityDirection.South));
@@ -31,8 +36,16 @@ public class Gravity : MonoBehaviour
 	}
 
 	public void SetGravityDirection(GravityDirection newGravityDirection) {
+		// If already set to this direction, return
+		if (gravityDirection == newGravityDirection) {
+			return;
+		}
+
+		// Save new direction
+		gravityDirection = newGravityDirection;
+
 		// Set gravityDirectionVector based on gravityDirection
-		switch (newGravityDirection) {
+		switch (gravityDirection) {
 			case GravityDirection.North:
 				gravityVector = Vector2.up;
 				break;
@@ -40,7 +53,6 @@ public class Gravity : MonoBehaviour
 				gravityVector = Vector2.right;
 				break;
 			case GravityDirection.South:
-			default:
 				gravityVector = Vector2.down;
 				break;
 			case GravityDirection.West:
@@ -48,6 +60,7 @@ public class Gravity : MonoBehaviour
 				break;
 		}
 
-		eventManager.InvokeEvent("Gravity_" + newGravityDirection);
+		// Invoke event to indicate that gravity has changed
+		eventManager.InvokeEvent("Gravity_" + gravityDirection);
 	}
 }

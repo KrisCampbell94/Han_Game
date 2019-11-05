@@ -5,13 +5,15 @@ using static Gravity;
 public class PlayerInput : MonoBehaviour
 {
 	private EventManager eventManager;
+	private Gravity gravity;
 
 	private Direction direction;
 	private Movement movement;
-
+	
     // Start is called before the first frame update
     void Start() {
 		eventManager = GetComponent<EventManager>();
+		gravity = GetComponent<Gravity>();
 
 		// Current input affecting movement
 		// May differ fron actual movement in case of obstacles, being in the air, etc
@@ -24,6 +26,7 @@ public class PlayerInput : MonoBehaviour
 
 	private void FixedUpdate() {
 		float horizontalMove = Input.GetAxis("Horizontal");
+		float verticalMove = Input.GetAxis("Vertical");
 
 		// Check current movement
 		switch (movement) {
@@ -61,9 +64,6 @@ public class PlayerInput : MonoBehaviour
 					// Change to right and call event
 					direction = Direction.Right;
 					eventManager.InvokeEvent("Input_TurnRight");
-
-					// TODO: Proper controls for gravity manipulation
-					eventManager.InvokeEvent("Input_Gravity_East");
 				}
 				break;
 			case Direction.Right:
@@ -72,11 +72,24 @@ public class PlayerInput : MonoBehaviour
 					// Change to left and call event
 					direction = Direction.Left;
 					eventManager.InvokeEvent("Input_TurnLeft");
-					
-					// TODO: Proper controls for gravity manipulation
-					eventManager.InvokeEvent("Input_Gravity_West");
 				}
 				break;
+		}
+
+		if (horizontalMove > 0) {
+			// TODO: Proper controls for gravity manipulation
+			eventManager.InvokeEvent("Input_Gravity_East");
+		} else if (horizontalMove < 0) {
+			// TODO: Proper controls for gravity manipulation
+			eventManager.InvokeEvent("Input_Gravity_West");
+		}
+
+		if (verticalMove > 0) {
+			// TODO: Proper controls for gravity manipulation
+			eventManager.InvokeEvent("Input_Gravity_North");
+		} else if (verticalMove < 0) {
+			// TODO: Proper controls for gravity manipulation
+			eventManager.InvokeEvent("Input_Gravity_South");
 		}
 	}
 }
