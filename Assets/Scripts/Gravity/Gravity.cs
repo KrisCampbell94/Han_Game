@@ -60,6 +60,9 @@ public class Gravity : MonoBehaviour
 				break;
 		}
 
+		// Clear existing velocity
+		rBody2D.velocity = Vector3.zero;
+
 		// Invoke event to indicate that gravity has changed
 		eventManager.InvokeEvent("Gravity_" + gravityDirection);
 	}
