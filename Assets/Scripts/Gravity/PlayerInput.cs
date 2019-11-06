@@ -4,8 +4,6 @@ using static Gravity;
 
 public class PlayerInput : MonoBehaviour
 {
-    public KeyCode gravityKey = KeyCode.LeftShift;
-
     private EventManager eventManager;
     private Gravity gravity;
 
@@ -29,15 +27,16 @@ public class PlayerInput : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Get inputs
         float horizontalMove = Input.GetAxis("Horizontal");
         float verticalMove = Input.GetAxis("Vertical");
-        bool gravityKeyDown = Input.GetKeyDown(gravityKey);
+        bool gravityButtonDown = Input.GetButton("Gravity");
 
         // If there is movement
-        if (horizontalMove != 0 && verticalMove != 0)
+        if (horizontalMove != 0 || verticalMove != 0)
         {
             // If holding gravity key (shift)
-            if (gravityKeyDown)
+            if (gravityButtonDown)
             {
                 // Do gravity change
                 GravityInput(horizontalMove, verticalMove);
@@ -110,22 +109,33 @@ public class PlayerInput : MonoBehaviour
 
     private void GravityInput(float horizontalMove, float verticalMove)
     {
-        if (horizontalMove > 0)
+        // If vertical change
+        if (verticalMove != 0)
         {
-            eventManager.InvokeEvent("Input_Gravity_East");
+            // Positive, change to north
+            if (verticalMove > 0 && gravity.gravityDirection != GravityDirection.North)
+            {
+                eventManager.InvokeEvent("Input_Gravity_North");
+            }
+            // Negative, change to south
+            else if (verticalMove < 0 && gravity.gravityDirection != GravityDirection.South)
+            {
+                eventManager.InvokeEvent("Input_Gravity_South");
+            }
         }
-        else if (horizontalMove < 0)
+        // If horizontal change
+        else if (horizontalMove != 0)
         {
-            eventManager.InvokeEvent("Input_Gravity_West");
-        }
-
-        if (verticalMove > 0)
-        {
-            eventManager.InvokeEvent("Input_Gravity_North");
-        }
-        else if (verticalMove < 0)
-        {
-            eventManager.InvokeEvent("Input_Gravity_South");
+            // Positive, change to east
+            if (horizontalMove > 0 && gravity.gravityDirection != GravityDirection.East)
+            {
+                eventManager.InvokeEvent("Input_Gravity_East");
+            }
+            // Negative, change to west
+            else if (horizontalMove < 0 && gravity.gravityDirection != GravityDirection.West)
+            {
+                eventManager.InvokeEvent("Input_Gravity_West");
+            }
         }
     }
 }

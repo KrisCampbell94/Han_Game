@@ -77,7 +77,5 @@ public class EntityMover : MonoBehaviour
 				destAngleZ = -90;
 				break;
 		}
-
-		Debug.Log("start " + startAngle.z + " dest " + destAngleZ);
 	}
 }
