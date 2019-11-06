@@ -17,6 +17,10 @@ public class PlayerControllerScript : MonoBehaviour
     public bool isRunning = false;
 
     public bool isAttacking = false;
+    public bool isCloseAttacking = false;
+    private BoxCollider2D closeAttackCollider;
+    public bool isEnemyClose = false;
+    public Transform enemyTracker;
     public Transform attackLocation;
 
     public bool isGravity = false;
@@ -24,8 +28,6 @@ public class PlayerControllerScript : MonoBehaviour
     private GameObject stage;
     public List<Vector2> stage_Distance = new List<Vector2>();
     private int iterationCount = -1;
-
-    public int hitPoints = 10;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -44,7 +46,8 @@ public class PlayerControllerScript : MonoBehaviour
             stage_Distance.Add(stage.transform.position - child.position);
             //Debug.Log(rotatable.transform.position - child.position);
         }
-
+        closeAttackCollider = gameObject.AddComponent(typeof(BoxCollider2D)) as BoxCollider2D;
+        closeAttackCollider.enabled = false;
     }
 
     void FixedUpdate()
@@ -65,7 +68,7 @@ public class PlayerControllerScript : MonoBehaviour
             if (horizontalTapCooler > 0f && horizontalTapCount == 2)
             {
                 // Double Tap Running
-                isRunning = true;
+                //isRunning = true;
             }
             else
             {
@@ -111,21 +114,28 @@ public class PlayerControllerScript : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 0);
         }
 
+		isEnemyClose = enemyTracker.GetComponent<PlayerEncounterScript>().isEnemyClose;
         // Attacking Setup
         if (Input.GetButtonDown("Attack"))
         {
-            isAttacking = true;
             // KUNAI Weapon Setup
-            GameObject weaponA = ObjectPoolerScript.sharedInstance.GetPooledObject();
-            if(weaponA != null)
+            if (!isEnemyClose)
             {
-                KunaiScript weaponAScript = weaponA.GetComponent<KunaiScript>();
-                weaponAScript.isRight = (transform.eulerAngles.y == 0);
-                weaponA.transform.position = attackLocation.transform.position;
-                weaponA.SetActive(true);
+                isAttacking = true;
+                GameObject weaponA = KunaiPoolerScript.sharedInstance.GetPooledKunais();
+                if (weaponA != null)
+                {
+                    KunaiScript weaponAScript = weaponA.GetComponent<KunaiScript>();
+                    weaponAScript.isRight = (transform.eulerAngles.y == 0);
+                    weaponA.transform.position = attackLocation.transform.position;
+                    weaponA.SetActive(true);
+                }
             }
-            // NOTES:
-            //  There's another Box Collider 2D which is gonna be whenever an enemy is close, he'll attack with the sword instead of his kunai
+            else
+            {
+                isCloseAttacking = true;
+                CreateCloseAttackCollider();
+            }
         }
 
         // Gravity Setup Part 1
@@ -135,51 +145,32 @@ public class PlayerControllerScript : MonoBehaviour
             // Freeze the character in place; both X and Y axis
             rb.constraints = RigidbodyConstraints2D.FreezePosition;
             // If Player moves left or right
-            if (horizontalMove != 0)
+            if (Input.GetButtonDown("Horizontal") && horizontalMove > 0)
             {
-                stage.transform.Rotate(
-                    stage.transform.rotation.x,
-                    stage.transform.rotation.y, 
-                    Mathf.RoundToInt(stage.transform.rotation.z + (horizontalMove * gravityRotationSpeed)), 
-                    Space.World);
+                stage.transform.eulerAngles = new Vector3(0, 0, stage.transform.eulerAngles.z + 90);
+            }
+            else if (Input.GetButtonDown("Horizontal") && horizontalMove < 0)
+            {
+                stage.transform.eulerAngles = new Vector3(0, 0, stage.transform.eulerAngles.z - 90);
             }
         }
         else
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
-
-        // Hit Point Setup
-        switch (hitPoints)
-        {
-            case 0:
-                sr.color = new Color(0.5f, 0, 0);
-                break;
-            case 1:
-            case 2:
-                sr.color = new Color(0.6f, 0.2f, 0.2f);
-                break;
-            case 3:
-            case 4:
-                sr.color = new Color(0.7f, 0.4f, 0.4f); 
-                break;
-            case 5:
-            case 6:
-                sr.color = new Color(0.8f, 0.6f, 0.6f);
-                break;
-            case 7:
-            case 8:
-                sr.color = new Color(0.9f, 0.8f, 0.8f);
-                break;
-            case 9:
-            case 10:
-                sr.color = new Color(1, 1, 1);
-                break;
-        }
     }
 
     void Update()
     {
+		// Animation Setups
+        anim.SetFloat("SpeedHorizontal", Mathf.Abs(horizontalMove));
+        anim.SetFloat("SpeedVertical", rb.velocity.y);
+        anim.SetBool("Grounded", grounded);
+        anim.SetBool("Running", isRunning);
+        anim.SetBool("Attacking", isAttacking);
+        anim.SetBool("CloseAttacking", isCloseAttacking);
+        anim.SetBool("Gravity", isGravity);
+		
         // Jumping Setup Part 2
         if (Input.GetButtonDown("Jump") && grounded)
         {
@@ -213,18 +204,34 @@ public class PlayerControllerScript : MonoBehaviour
                 stage_Distance[i] = stage.transform.GetChild(i).position;
             }
         }
-
-        // Animation Setups
-        anim.SetFloat("SpeedHorizontal", Mathf.Abs(horizontalMove));
-        anim.SetFloat("SpeedVertical", rb.velocity.y);
-        anim.SetBool("Grounded", grounded);
-        anim.SetBool("Running", isRunning);
-        anim.SetBool("Attacking", isAttacking);
-        anim.SetBool("Gravity", isGravity);
     }
     // For Animation Event
     void AttackingFinish()
     {
         isAttacking = false;
+    }
+    void CloseAttackingFinish()
+    {
+        closeAttackCollider.enabled = false;
+        isCloseAttacking = false; 
+    }
+    void CreateCloseAttackCollider()
+    {
+        closeAttackCollider.enabled = true;
+		closeAttackCollider.isTrigger = true;
+        closeAttackCollider.offset = new Vector2(2, 2);
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy" && !isCloseAttacking)
+        {
+            GetComponent<HitPointScript>().SubtractHitPoints(4);
+        }
+        
     }
 }
