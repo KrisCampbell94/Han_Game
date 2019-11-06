@@ -27,32 +27,31 @@ public class EntityMover : MonoBehaviour
 	void Start() {
 		eventManager = GetComponent<EventManager>();
 
+        // Initial direction and movement
 		direction = Direction.Right;
 		movement = Movement.Stopped;
 
+        // Add listeners to react to gravity change
 		eventManager.AddListener("Gravity_North", () => RotateSelfToGravity(GravityDirection.North));
 		eventManager.AddListener("Gravity_East", () => RotateSelfToGravity(GravityDirection.East));
 		eventManager.AddListener("Gravity_South", () => RotateSelfToGravity(GravityDirection.South));
 		eventManager.AddListener("Gravity_West", () => RotateSelfToGravity(GravityDirection.West));
 	}
-
-    // Update is called once per frame
-    void Update() {
-        
-    }
-
+    
 	private void FixedUpdate() {
 		// If not orientated right
 		if (transform.eulerAngles.z != destAngleZ) {
-			// Gradually move rotation to new angle
+            // Get new angle for this update
 			Vector3 newAngle = startAngle;
-			float rotateDelta = (Time.time - startTime) / timeToRotate;
+            float rotateDelta = (Time.time - startTime) / timeToRotate;
+            newAngle.z = Mathf.Lerp(startAngle.z, destAngleZ, rotateDelta);
 
-			newAngle.z = Mathf.Lerp(startAngle.z, destAngleZ, rotateDelta);
-			if (newAngle.z == -90 && rotateDelta >= 1) {
+            // If angle is -90, set it to 270 instead
+            if (newAngle.z == -90 && rotateDelta >= 1) {
 				newAngle.z = 270;
 			}
 
+            // Set transform to new angle
 			transform.eulerAngles = newAngle;
 		}
 	}
@@ -62,6 +61,7 @@ public class EntityMover : MonoBehaviour
 		startTime = Time.time;
 		startAngle = transform.eulerAngles;
 
+        // Get new angle based on direction of gravity
 		switch (gravityDirection) {
 			case GravityDirection.North:
 				destAngleZ = 180;
