@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class CameraControllerScript : MonoBehaviour
 {
-	private GameObject getPlayer;
+	private GameObject player;
 	
 	public bool bounds = true;
 	public Vector3 minCameraPos, maxCameraPos;
 	
     // Start is called before the first frame update
-    void Start()
-    {
-        getPlayer = GameObject.FindWithTag("Player");
+    void Start() {
+        player = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-	
 	void FixedUpdate(){
 		// Update the position of the camera relative to the player
-		transform.position = new Vector3(getPlayer.transform.position.x, getPlayer.transform.position.y, transform.position.z);
+		Vector3 newPosition = player.transform.position;
+		newPosition.z = transform.position.z;
+		transform.position = newPosition;
+
+		// Update rotation of camera relative to player
+		Vector3 newRotation = transform.eulerAngles;
+		newRotation.z = player.transform.eulerAngles.z;
+		transform.eulerAngles = newRotation;
 		
-		// Boundaries setup
+		// Boundaries for camera
 		if(bounds){
 			transform.position = new Vector3(
 				Mathf.Clamp(transform.position.x, minCameraPos.x, maxCameraPos.x),
