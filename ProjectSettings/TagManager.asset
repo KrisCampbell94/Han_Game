@@ -7,6 +7,8 @@ TagManager:
   - Rotatable
   - Boundary
   - PlayerWeapon
+  - Enemy
+  - EnemyWeapon
   layers:
   - Default
   - TransparentFX
