@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
 
     private Direction direction;
     private Movement movement;
+    private Jumping jumping;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,10 @@ public class PlayerInput : MonoBehaviour
         // Current input affecting direction
         // Likely matches actual direction, since turning around is not hindered by obstacles
         direction = Direction.Right;
+
+
+        // Current input affecting jumping
+        jumping = Jumping.No;
     }
 
     private void FixedUpdate()
@@ -31,6 +36,7 @@ public class PlayerInput : MonoBehaviour
         float horizontalMove = Input.GetAxis("Horizontal");
         float verticalMove = Input.GetAxis("Vertical");
         bool gravityButtonDown = Input.GetButton("Gravity");
+        bool jumpButton = Input.GetButtonDown("Jump");
 
         // If holding gravity key (shift)
         if (gravityButtonDown)
@@ -42,6 +48,7 @@ public class PlayerInput : MonoBehaviour
         {
             // Otherwise, normal movement
             MovementInput(horizontalMove, verticalMove);
+            JumpInput(jumpButton);
         }
     }
 
@@ -103,6 +110,27 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    private void JumpInput(bool jumpButton)
+    {
+        switch (jumping)
+        {
+            case Jumping.No:
+                if (jumpButton)
+                {
+                    jumping = Jumping.Yes;
+                    eventManager.InvokeEvent("Input_JumpUp");
+                }
+                break;
+            case Jumping.Yes:
+                if (!jumpButton)
+                {
+                    jumping = Jumping.No;
+                    eventManager.InvokeEvent("Input_FallDown");
+                }
+                break;
+        }
+    }
+
     private void GravityInput(float horizontalMove, float verticalMove)
     {
         // If vertical change
@@ -134,4 +162,6 @@ public class PlayerInput : MonoBehaviour
             }
         }
     }
+
+
 }
