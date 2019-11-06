@@ -59,9 +59,7 @@ public class EntityMover : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(transform.eulerAngles.z + " " + destAngleZ);
-
-        // If not orientated right
+        // If not orientated right, orient first. Otherwise, move normally.
         if (transform.eulerAngles.z != destAngleZ)
         {
             UpdateOrientation();
@@ -144,7 +142,10 @@ public class EntityMover : MonoBehaviour
         startTime = Time.time;
         startAngle = transform.eulerAngles;
 
-        // Get new angle based on direction of gravity
+        // Depending on direction, set
+        // New entity angle
+        // Whether movement is on x or y
+        // Wheter direction is flipped or not
         switch (gravityDirection)
         {
             case GravityDirection.North:
