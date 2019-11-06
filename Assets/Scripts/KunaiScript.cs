@@ -25,4 +25,20 @@ public class KunaiScript : MonoBehaviour
             transform.position = new Vector2(transform.position.x - (speed * Time.deltaTime), transform.position.y);
         }
     }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(gameObject.tag == "EnemyWeapon" && collision.gameObject.tag == "Player")
+        {
+            if (!collision.gameObject.GetComponent<PlayerControllerScript>().isCloseAttacking)
+            {
+                collision.gameObject.GetComponent<HitPointScript>().SubtractHitPoints(1);
+            }
+            gameObject.SetActive(false);
+        }
+        if(gameObject.tag == "PlayerWeapon" && collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<HitPointScript>().SubtractHitPoints(3);
+            gameObject.SetActive(false);
+        }
+    }
 }

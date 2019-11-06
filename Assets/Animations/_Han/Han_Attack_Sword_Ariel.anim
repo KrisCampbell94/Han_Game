@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Han_Attack_Sword
+  m_Name: Han_Attack_Sword_Ariel
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,16 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2723272358799088740, guid: a19b55e927450274b92345f8924b49a5,
+      value: {fileID: 6830164377496045217, guid: a19b55e927450274b92345f8924b49a5,
+        type: 3}
+    - time: 0.083333336
+      value: {fileID: -2845440205113389088, guid: a19b55e927450274b92345f8924b49a5,
         type: 3}
     - time: 0.16666667
-      value: {fileID: -2084794881233481752, guid: a19b55e927450274b92345f8924b49a5,
+      value: {fileID: -2950694337010817057, guid: a19b55e927450274b92345f8924b49a5,
         type: 3}
-    - time: 0.33333334
-      value: {fileID: 5669619275909953923, guid: a19b55e927450274b92345f8924b49a5,
-        type: 3}
-    - time: 0.5
-      value: {fileID: 5763287082777648820, guid: a19b55e927450274b92345f8924b49a5,
+    - time: 0.25
+      value: {fileID: 9101091872811361772, guid: a19b55e927450274b92345f8924b49a5,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -50,16 +50,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2723272358799088740, guid: a19b55e927450274b92345f8924b49a5, type: 3}
-    - {fileID: -2084794881233481752, guid: a19b55e927450274b92345f8924b49a5, type: 3}
-    - {fileID: 5669619275909953923, guid: a19b55e927450274b92345f8924b49a5, type: 3}
-    - {fileID: 5763287082777648820, guid: a19b55e927450274b92345f8924b49a5, type: 3}
+    - {fileID: 6830164377496045217, guid: a19b55e927450274b92345f8924b49a5, type: 3}
+    - {fileID: -2845440205113389088, guid: a19b55e927450274b92345f8924b49a5, type: 3}
+    - {fileID: -2950694337010817057, guid: a19b55e927450274b92345f8924b49a5, type: 3}
+    - {fileID: 9101091872811361772, guid: a19b55e927450274b92345f8924b49a5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5833333
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -79,7 +79,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.5833333
+  - time: 0.33333334
     functionName: CloseAttackingFinish
     data: 
     objectReferenceParameter: {fileID: 0}
