@@ -57,17 +57,18 @@ public class Enemy_NinjaScript : MonoBehaviour
             weapon.SetActive(true);
         }
     }
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
+		if (collision.gameObject.tag == "Player")
         {
             if (collision.gameObject.GetComponent<PlayerControllerScript>().isCloseAttacking)
             {
                 GetComponent<HitPointScript>().SubtractHitPoints(5);
             }
         }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }

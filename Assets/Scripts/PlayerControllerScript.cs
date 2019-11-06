@@ -68,7 +68,7 @@ public class PlayerControllerScript : MonoBehaviour
             if (horizontalTapCooler > 0f && horizontalTapCount == 2)
             {
                 // Double Tap Running
-                isRunning = true;
+                //isRunning = true;
             }
             else
             {
@@ -114,10 +114,10 @@ public class PlayerControllerScript : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 0);
         }
 
+		isEnemyClose = enemyTracker.GetComponent<PlayerEncounterScript>().isEnemyClose;
         // Attacking Setup
         if (Input.GetButtonDown("Attack"))
         {
-            isEnemyClose = enemyTracker.GetComponent<PlayerEncounterScript>().isEnemyClose;
             // KUNAI Weapon Setup
             if (!isEnemyClose)
             {
@@ -162,6 +162,15 @@ public class PlayerControllerScript : MonoBehaviour
 
     void Update()
     {
+		// Animation Setups
+        anim.SetFloat("SpeedHorizontal", Mathf.Abs(horizontalMove));
+        anim.SetFloat("SpeedVertical", rb.velocity.y);
+        anim.SetBool("Grounded", grounded);
+        anim.SetBool("Running", isRunning);
+        anim.SetBool("Attacking", isAttacking);
+        anim.SetBool("CloseAttacking", isCloseAttacking);
+        anim.SetBool("Gravity", isGravity);
+		
         // Jumping Setup Part 2
         if (Input.GetButtonDown("Jump") && grounded)
         {
@@ -195,15 +204,6 @@ public class PlayerControllerScript : MonoBehaviour
                 stage_Distance[i] = stage.transform.GetChild(i).position;
             }
         }
-
-        // Animation Setups
-        anim.SetFloat("SpeedHorizontal", Mathf.Abs(horizontalMove));
-        anim.SetFloat("SpeedVertical", rb.velocity.y);
-        anim.SetBool("Grounded", grounded);
-        anim.SetBool("Running", isRunning);
-        anim.SetBool("Attacking", isAttacking);
-        anim.SetBool("CloseAttacking", isCloseAttacking);
-        anim.SetBool("Gravity", isGravity);
     }
     // For Animation Event
     void AttackingFinish()
@@ -218,16 +218,8 @@ public class PlayerControllerScript : MonoBehaviour
     void CreateCloseAttackCollider()
     {
         closeAttackCollider.enabled = true;
-        // Move it Right
-        if (transform.rotation.y == 0)
-        {
-            closeAttackCollider.offset = new Vector2(2, 2);
-        }
-        // Move it Left
-        else if (transform.rotation.y == 180)
-        {
-            closeAttackCollider.offset = new Vector2(-2, 2);
-        }
+		closeAttackCollider.isTrigger = true;
+        closeAttackCollider.offset = new Vector2(2, 2);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
