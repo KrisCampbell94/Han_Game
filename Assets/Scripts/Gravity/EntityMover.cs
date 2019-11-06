@@ -7,6 +7,7 @@ public class EntityMover : MonoBehaviour
     public enum Movement { Stopped, Walking, Running }
 
     public float movementSpeed = 6.0f;
+    public float runningMultiplier = 2;
 
     private EventManager eventManager;
     private Rigidbody2D rBody2D;
@@ -16,6 +17,9 @@ public class EntityMover : MonoBehaviour
 
     // Current movement state
     private Movement movement;
+
+    // Movement
+    private Vector2 velocity;
 
     // Current grounded state
     private bool grounded;
@@ -33,8 +37,8 @@ public class EntityMover : MonoBehaviour
         rBody2D = GetComponent<Rigidbody2D>();
 
         // Initial direction and movement
-        direction = Direction.Right;
-        movement = Movement.Stopped;
+        SetDirection(Direction.Right);
+        SetMovement(Movement.Stopped);
 
         // Add listeners to react to input
         eventManager.AddListener("Input_TurnLeft", () => SetDirection(Direction.Left));
@@ -65,6 +69,7 @@ public class EntityMover : MonoBehaviour
 
     // Updates
 
+    // TODO: Take current orientation into account?
     private void UpdateOrientation()
     {
         // Get new angle for this update
@@ -84,33 +89,6 @@ public class EntityMover : MonoBehaviour
 
     private void UpdateMovement()
     {
-        // Set velocity direction
-        float directionMultiplier;
-        switch (direction)
-        {
-            case Direction.Left:
-                directionMultiplier = -1;
-                break;
-            case Direction.Right:
-                directionMultiplier = 1;
-                break;
-        }
-
-        // Set velocity magnitute
-        float movementMultiplier;
-        switch (movement)
-        {
-            case Movement.Stopped:
-                movementMultiplier = 0;
-                break;
-            case Movement.Walking:
-                movementMultiplier = 1;
-                break;
-            case Movement.Running:
-                movementMultiplier = 2;
-                break;
-        }
-
         // Update velocity
         rBody2D.velocity = new Vector2(movementSpeed * movementMultiplier * directionMultiplier, rBody2D.velocity.y);
     }
@@ -120,22 +98,38 @@ public class EntityMover : MonoBehaviour
     private void SetDirection(Direction newDirection)
     {
         direction = newDirection;
+
+        float directionMultiplier = 0;
+
+        // Set velocity direction
+        switch (direction)
+        {
+            case Direction.Left:
+                directionMultiplier = -1;
+                break;
+            case Direction.Right:
+                directionMultiplier = 1;
+                break;
+        }
     }
 
     private void SetMovement(Movement newMovement)
     {
         movement = newMovement;
 
+        float movementMultiplier = 0;
+
+        // Set velocity multiplier
         switch (movement)
         {
             case Movement.Stopped:
-
+                movementMultiplier = 0;
                 break;
             case Movement.Walking:
-
+                movementMultiplier = 1;
                 break;
             case Movement.Running:
-
+                movementMultiplier = runningMultiplier;
                 break;
         }
     }
