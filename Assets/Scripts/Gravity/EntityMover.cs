@@ -3,79 +3,165 @@ using static Gravity;
 
 public class EntityMover : MonoBehaviour
 {
-	public enum Direction { Left, Right }
-	public enum Movement { Stopped, Walking, Running }
+    public enum Direction { Left, Right }
+    public enum Movement { Stopped, Walking, Running }
 
-	private EventManager eventManager;
+    public float movementSpeed = 6.0f;
 
-	// Current movement direction relative to self
-	private Direction direction;
+    private EventManager eventManager;
+    private Rigidbody2D rBody2D;
 
-	// Current movement state
-	private Movement movement;
+    // Current movement direction relative to self
+    private Direction direction;
 
-	// Current grounded state
-	private bool grounded;
+    // Current movement state
+    private Movement movement;
 
-	// Rotation Lerping
-	public float timeToRotate = 0.5f; // Seconds
-	private float startTime;
-	private Vector3 startAngle;
-	private float destAngleZ;
+    // Current grounded state
+    private bool grounded;
 
-	// Start is called before the first frame update
-	void Start() {
-		eventManager = GetComponent<EventManager>();
+    // Rotation Lerping
+    public float timeToRotate = 0.5f; // Seconds
+    private float startTime;
+    private Vector3 startAngle;
+    private float destAngleZ;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        eventManager = GetComponent<EventManager>();
+        rBody2D = GetComponent<Rigidbody2D>();
 
         // Initial direction and movement
-		direction = Direction.Right;
-		movement = Movement.Stopped;
+        direction = Direction.Right;
+        movement = Movement.Stopped;
+
+        // Add listeners to react to input
+        eventManager.AddListener("Input_TurnLeft", () => SetDirection(Direction.Left));
+        eventManager.AddListener("Input_TurnRight", () => SetDirection(Direction.Right));
+        eventManager.AddListener("Input_Stopping", () => SetMovement(Movement.Stopped));
+        eventManager.AddListener("Input_Walking", () => SetMovement(Movement.Walking));
+        eventManager.AddListener("Input_Running", () => SetMovement(Movement.Running));
 
         // Add listeners to react to gravity change
-		eventManager.AddListener("Gravity_North", () => RotateSelfToGravity(GravityDirection.North));
-		eventManager.AddListener("Gravity_East", () => RotateSelfToGravity(GravityDirection.East));
-		eventManager.AddListener("Gravity_South", () => RotateSelfToGravity(GravityDirection.South));
-		eventManager.AddListener("Gravity_West", () => RotateSelfToGravity(GravityDirection.West));
-	}
-    
-	private void FixedUpdate() {
-		// If not orientated right
-		if (transform.eulerAngles.z != destAngleZ) {
-            // Get new angle for this update
-			Vector3 newAngle = startAngle;
-            float rotateDelta = (Time.time - startTime) / timeToRotate;
-            newAngle.z = Mathf.Lerp(startAngle.z, destAngleZ, rotateDelta);
+        eventManager.AddListener("Gravity_North", () => RotateSelfToGravity(GravityDirection.North));
+        eventManager.AddListener("Gravity_East", () => RotateSelfToGravity(GravityDirection.East));
+        eventManager.AddListener("Gravity_South", () => RotateSelfToGravity(GravityDirection.South));
+        eventManager.AddListener("Gravity_West", () => RotateSelfToGravity(GravityDirection.West));
+    }
 
-            // If angle is -90, set it to 270 instead
-            if (newAngle.z == -90 && rotateDelta >= 1) {
-				newAngle.z = 270;
-			}
+    private void FixedUpdate()
+    {
+        // If not orientated right
+        if (transform.eulerAngles.z != destAngleZ)
+        {
+            UpdateOrientation();
+        }
+        else
+        {
+            UpdateMovement();
+        }
+    }
 
-            // Set transform to new angle
-			transform.eulerAngles = newAngle;
-		}
-	}
+    // Updates
 
-	private void RotateSelfToGravity(GravityDirection gravityDirection) {
-		// Store current time and angle
-		startTime = Time.time;
-		startAngle = transform.eulerAngles;
+    private void UpdateOrientation()
+    {
+        // Get new angle for this update
+        Vector3 newAngle = startAngle;
+        float rotateDelta = (Time.time - startTime) / timeToRotate;
+        newAngle.z = Mathf.Lerp(startAngle.z, destAngleZ, rotateDelta);
+
+        // If angle is -90, set it to 270 instead
+        if (newAngle.z == -90 && rotateDelta >= 1)
+        {
+            newAngle.z = 270;
+        }
+
+        // Set transform to new angle
+        transform.eulerAngles = newAngle;
+    }
+
+    private void UpdateMovement()
+    {
+        // Set velocity direction
+        float directionMultiplier;
+        switch (direction)
+        {
+            case Direction.Left:
+                directionMultiplier = -1;
+                break;
+            case Direction.Right:
+                directionMultiplier = 1;
+                break;
+        }
+
+        // Set velocity magnitute
+        float movementMultiplier;
+        switch (movement)
+        {
+            case Movement.Stopped:
+                movementMultiplier = 0;
+                break;
+            case Movement.Walking:
+                movementMultiplier = 1;
+                break;
+            case Movement.Running:
+                movementMultiplier = 2;
+                break;
+        }
+
+        // Update velocity
+        rBody2D.velocity = new Vector2(movementSpeed * movementMultiplier * directionMultiplier, rBody2D.velocity.y);
+    }
+
+    // Events
+
+    private void SetDirection(Direction newDirection)
+    {
+        direction = newDirection;
+    }
+
+    private void SetMovement(Movement newMovement)
+    {
+        movement = newMovement;
+
+        switch (movement)
+        {
+            case Movement.Stopped:
+
+                break;
+            case Movement.Walking:
+
+                break;
+            case Movement.Running:
+
+                break;
+        }
+    }
+
+    private void RotateSelfToGravity(GravityDirection gravityDirection)
+    {
+        // Store current time and angle
+        startTime = Time.time;
+        startAngle = transform.eulerAngles;
 
         // Get new angle based on direction of gravity
-		switch (gravityDirection) {
-			case GravityDirection.North:
-				destAngleZ = 180;
-				break;
-			case GravityDirection.East:
-				destAngleZ = 90;
-				break;
-			case GravityDirection.South:
-			default:
-				destAngleZ = 0;
-				break;
-			case GravityDirection.West:
-				destAngleZ = -90;
-				break;
-		}
-	}
+        switch (gravityDirection)
+        {
+            case GravityDirection.North:
+                destAngleZ = 180;
+                break;
+            case GravityDirection.East:
+                destAngleZ = 90;
+                break;
+            case GravityDirection.South:
+            default:
+                destAngleZ = 0;
+                break;
+            case GravityDirection.West:
+                destAngleZ = -90;
+                break;
+        }
+    }
 }
