@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\ObjectPoolerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerEncounterScript.cs" />
+    <None Include="Assets\Notes\Possible Controls.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/krisc/SchoolDocuments/InteractiveGaming/_COMP394_Sec1_PraticalGameDesign/Group_Project/Han_Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
