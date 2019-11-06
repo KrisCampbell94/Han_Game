@@ -19,7 +19,10 @@ public class EntityMover : MonoBehaviour
     private Movement movement;
 
     // Movement
-    private Vector2 velocity;
+    float movementMultiplier = 0; // 0 for stop, 1 for move, runningMultiplier for run
+    float directionMultiplier = 1; // 1 for right, -1 for left
+    float directionFlipper = 1; // 1 for normal (Gravity South or East), -1 for flipped (Gravity North or West)
+    bool moveOnX = true;
 
     // Current grounded state
     private bool grounded;
@@ -56,6 +59,8 @@ public class EntityMover : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log(transform.eulerAngles.z + " " + destAngleZ);
+
         // If not orientated right
         if (transform.eulerAngles.z != destAngleZ)
         {
@@ -76,21 +81,24 @@ public class EntityMover : MonoBehaviour
         Vector3 newAngle = startAngle;
         float rotateDelta = (Time.time - startTime) / timeToRotate;
         newAngle.z = Mathf.Lerp(startAngle.z, destAngleZ, rotateDelta);
-
-        // If angle is -90, set it to 270 instead
-        if (newAngle.z == -90 && rotateDelta >= 1)
-        {
-            newAngle.z = 270;
-        }
-
+        
         // Set transform to new angle
         transform.eulerAngles = newAngle;
     }
 
     private void UpdateMovement()
     {
+        float moveDelta = movementSpeed * movementMultiplier * directionMultiplier * directionFlipper;
+
         // Update velocity
-        rBody2D.velocity = new Vector2(movementSpeed * movementMultiplier * directionMultiplier, rBody2D.velocity.y);
+        if (moveOnX)
+        {
+            rBody2D.velocity = new Vector2(moveDelta, rBody2D.velocity.y);
+        }
+        else
+        {
+            rBody2D.velocity = new Vector2(rBody2D.velocity.x, moveDelta);
+        }
     }
 
     // Events
@@ -98,8 +106,6 @@ public class EntityMover : MonoBehaviour
     private void SetDirection(Direction newDirection)
     {
         direction = newDirection;
-
-        float directionMultiplier = 0;
 
         // Set velocity direction
         switch (direction)
@@ -116,8 +122,6 @@ public class EntityMover : MonoBehaviour
     private void SetMovement(Movement newMovement)
     {
         movement = newMovement;
-
-        float movementMultiplier = 0;
 
         // Set velocity multiplier
         switch (movement)
@@ -145,16 +149,24 @@ public class EntityMover : MonoBehaviour
         {
             case GravityDirection.North:
                 destAngleZ = 180;
+                moveOnX = true;
+                directionFlipper = -1;
                 break;
             case GravityDirection.East:
                 destAngleZ = 90;
+                moveOnX = false;
+                directionFlipper = 1;
                 break;
             case GravityDirection.South:
             default:
                 destAngleZ = 0;
+                moveOnX = true;
+                directionFlipper = 1;
                 break;
             case GravityDirection.West:
-                destAngleZ = -90;
+                destAngleZ = 270;
+                moveOnX = false;
+                directionFlipper = -1;
                 break;
         }
     }
