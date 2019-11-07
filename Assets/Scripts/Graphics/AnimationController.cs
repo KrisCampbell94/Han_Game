@@ -6,12 +6,13 @@ public class AnimationController : MonoBehaviour
 {
 	private EventManager eventManager;
 	private Animator animator;
-	private EntityMover entityMover;
+	private SpriteRenderer spriteRenderer;
 
 	// Start is called before the first frame update
 	void Start() {
 		eventManager = GetComponent<EventManager>();
 		animator = GetComponent<Animator>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
 
 		eventManager.AddListener("Input_Stopping", () => {
 			SetAnimatorVariable("Walking", false);
@@ -27,6 +28,9 @@ public class AnimationController : MonoBehaviour
 			SetAnimatorVariable("Walking", false);
 			SetAnimatorVariable("Running", true);
 		});
+
+		eventManager.AddListener("Input_TurnLeft", () => { spriteRenderer.flipX = true; });
+		eventManager.AddListener("Input_TurnRight", () => { spriteRenderer.flipX = false; });
 
 		eventManager.AddListener("Ground_True", () => {
 			SetAnimatorVariable("Grounded", true);
