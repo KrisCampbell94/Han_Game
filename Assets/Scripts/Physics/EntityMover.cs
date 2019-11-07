@@ -10,7 +10,9 @@ public class EntityMover : MonoBehaviour
 	public float runningMultiplier = 2;
 	public float jumpForce = 8;
 
-	private EventManager eventManager;
+    public bool orienting { get; private set; } // Enabled when rotating, disabled when done
+
+    private EventManager eventManager;
 	private Rigidbody2D rBody2D;
 	private GroundChecker groundChecker;
 
@@ -32,7 +34,6 @@ public class EntityMover : MonoBehaviour
 	private float startTime; // Time when started rotating
 	private Vector3 startAngle; // Angle when started rotating
 	private float destAngleZ; // Angle to rotate to
-	private bool orienting; // Enabled when rotating
 
 	// Start is called before the first frame update
 	void Start() {
@@ -174,8 +175,8 @@ public class EntityMover : MonoBehaviour
 				break;
 			case GravityDirection.South:
 			default:
-				destAngleZ = 0;
-				moveOnX = true;
+                destAngleZ = 0;
+                moveOnX = true;
 				directionFlipper = 1;
 				jumpFlipper = 1;
 				break;
