@@ -6,7 +6,6 @@ public class CameraControllerScript : MonoBehaviour
 {
 	public bool bounds = true;
 	public Vector3 minCameraPos, maxCameraPos;
-	public float yOffset = 4;
 
 	private GameObject player;
 
@@ -19,7 +18,6 @@ public class CameraControllerScript : MonoBehaviour
 		// Update the position of the camera relative to the player
 		Vector3 newPosition = player.transform.position;
 		newPosition.z = transform.position.z;
-		newPosition.y += yOffset;
 		transform.position = newPosition;
 
 		// Update rotation of camera relative to player
