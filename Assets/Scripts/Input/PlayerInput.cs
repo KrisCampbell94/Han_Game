@@ -6,6 +6,7 @@ public class PlayerInput : MonoBehaviour
 {
 	private EventManager eventManager;
 	private Gravity gravity;
+    private EntityMover entityMover;
 
 	private Direction direction;
 	private Movement movement;
@@ -14,6 +15,7 @@ public class PlayerInput : MonoBehaviour
 	void Start() {
 		eventManager = GetComponent<EventManager>();
 		gravity = GetComponent<Gravity>();
+        entityMover = GetComponent<EntityMover>();
 
 		// Current input affecting movement
 		// May differ fron actual movement in case of obstacles, being in the air, etc
@@ -34,8 +36,11 @@ public class PlayerInput : MonoBehaviour
 		// If holding gravity key (shift)
 		if (gravityButtonDown) {
 			// Do gravity change
-			GravityInput(horizontalMove, verticalMove);
-		} else {
+            if (!entityMover.orienting)
+            {
+                GravityInput(horizontalMove, verticalMove);
+            }
+        } else {
 			// Otherwise, normal movement
 			MovementInput(horizontalMove, verticalMove);
 			JumpInput(jumpButton);
@@ -102,23 +107,19 @@ public class PlayerInput : MonoBehaviour
 		// If vertical change
 		if (verticalMove != 0) {
 			// Positive, change to north
-			if (verticalMove > 0 && gravity.gravityDirection != GravityDirection.North) {
-				eventManager.InvokeEvent("Input_Gravity_North");
-			}
-			// Negative, change to south
-			else if (verticalMove < 0 && gravity.gravityDirection != GravityDirection.South) {
-				eventManager.InvokeEvent("Input_Gravity_South");
+			if (verticalMove > 0) {
+				eventManager.InvokeEvent("Input_Gravity_Flip");
 			}
 		}
 		// If horizontal change
 		else if (horizontalMove != 0) {
 			// Positive, change to east
-			if (horizontalMove > 0 && gravity.gravityDirection != GravityDirection.East) {
-				eventManager.InvokeEvent("Input_Gravity_East");
+			if (horizontalMove > 0) {
+				eventManager.InvokeEvent("Input_Gravity_RotateRight");
 			}
 			// Negative, change to west
-			else if (horizontalMove < 0 && gravity.gravityDirection != GravityDirection.West) {
-				eventManager.InvokeEvent("Input_Gravity_West");
+			else if (horizontalMove < 0) {
+				eventManager.InvokeEvent("Input_Gravity_RotateLeft");
 			}
 		}
 	}
