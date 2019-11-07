@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CameraControllerScript : MonoBehaviour
 {
-	private GameObject player;
-	
 	public bool bounds = true;
 	public Vector3 minCameraPos, maxCameraPos;
-	
-    // Start is called before the first frame update
-    void Start() {
+
+	private GameObject player;
+
+	// Start is called before the first frame update
+	void Start() {
         player = GameObject.FindWithTag("Player");
     }
 

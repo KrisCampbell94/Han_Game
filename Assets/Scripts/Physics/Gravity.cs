@@ -7,6 +7,7 @@ public class Gravity : MonoBehaviour
 	public enum GravityDirection { North, East, South, West }
 
 	public float gravityMagnitude = 9.8f;
+	public bool autoFixRigidbody = true;
 
 	private EventManager eventManager;
 	private Rigidbody2D rBody2D;
@@ -19,6 +20,10 @@ public class Gravity : MonoBehaviour
 	void Start() {
 		eventManager = GetComponent<EventManager>();
 		rBody2D = GetComponent<Rigidbody2D>();
+
+		if (rBody2D.gravityScale != 0) {
+			Debug.LogError("Rigidbody2D Gravity Scale should be 0 to use custom Gravity.");
+		}
 
 		// Set initial gravity
 		SetGravityDirection(GravityDirection.South);
