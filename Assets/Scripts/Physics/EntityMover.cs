@@ -20,9 +20,6 @@ public class EntityMover : MonoBehaviour
 	// Current movement state
 	private Movement movement;
 
-	// Current jumping state
-	private bool jumping;
-
 	// Movement
 	float movementMultiplier = 0; // 0 for stop, 1 for move, runningMultiplier for run
 	float directionMultiplier = 1; // 1 for right, -1 for left
@@ -30,14 +27,12 @@ public class EntityMover : MonoBehaviour
 	float jumpFlipper = 1;
 	bool moveOnX = true;
 
-	// Jumping
-	float jumpMultiplier = 0;
-
 	// Rotation Lerping
 	public float timeToRotate = 0.5f; // Seconds
-	private float startTime;
-	private Vector3 startAngle;
-	private float destAngleZ;
+	private float startTime; // Time when started rotating
+	private Vector3 startAngle; // Angle when started rotating
+	private float destAngleZ; // Angle to rotate to
+	private bool orienting; // Enabled when rotating
 
 	// Start is called before the first frame update
 	void Start() {
@@ -68,7 +63,7 @@ public class EntityMover : MonoBehaviour
 
 	private void FixedUpdate() {
 		// If not orientated right, orient first. Otherwise, move normally.
-		if (transform.eulerAngles.z != destAngleZ) {
+		if (orienting) {
 			UpdateOrientation();
 		} else {
 			UpdateMovement();
@@ -86,6 +81,13 @@ public class EntityMover : MonoBehaviour
 
 		// Set transform to new angle
 		transform.eulerAngles = newAngle;
+
+		// If reached destination rotation
+		if (transform.eulerAngles.z == destAngleZ) {
+			// Disable orienting state
+			orienting = false;
+			eventManager.InvokeEvent("Mover_Orienting_" + orienting);
+		}
 	}
 
 	private void UpdateMovement() {
@@ -97,9 +99,6 @@ public class EntityMover : MonoBehaviour
 		} else {
 			rBody2D.velocity = new Vector2(rBody2D.velocity.x, moveDelta);
 		}
-	}
-
-	private void UpdateJumping() {
 	}
 
 	// Events
@@ -187,5 +186,9 @@ public class EntityMover : MonoBehaviour
 				jumpFlipper = 1;
 				break;
 		}
+
+		// Enable orienting state
+		orienting = true;
+		eventManager.InvokeEvent("Mover_Orienting_" + orienting);
 	}
 }
