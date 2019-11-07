@@ -83,11 +83,21 @@ public class EntityMover : MonoBehaviour
 		// Set transform to new angle
 		transform.eulerAngles = newAngle;
 
+        // If angle has reached 360, reset the dest to 0
+        if (newAngle.z == 360)
+        {
+            destAngleZ = 0;
+        } else if (newAngle.z == -90) // If angle reached -90, reset dest to 270
+        {
+            destAngleZ = 270;
+        }
+
 		// If reached destination rotation
 		if (transform.eulerAngles.z == destAngleZ) {
 			// Disable orienting state
 			orienting = false;
 			eventManager.InvokeEvent("Mover_Orienting_" + orienting);
+
 		}
 	}
 
@@ -176,17 +186,31 @@ public class EntityMover : MonoBehaviour
 			case GravityDirection.South:
 			default:
                 destAngleZ = 0;
+                // Smart rotate
+                if (startAngle.z == 270)
+                {
+                    destAngleZ = 360;
+                }
+
                 moveOnX = true;
 				directionFlipper = 1;
 				jumpFlipper = 1;
 				break;
 			case GravityDirection.West:
 				destAngleZ = 270;
-				moveOnX = false;
+                // Smart rotate
+                if (startAngle.z == 0)
+                {
+                    destAngleZ = -90;
+                }
+
+                moveOnX = false;
 				directionFlipper = -1;
 				jumpFlipper = 1;
 				break;
 		}
+
+        Debug.Log(startAngle.z + " " + destAngleZ);
 
 		// Enable orienting state
 		orienting = true;
