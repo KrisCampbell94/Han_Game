@@ -40,8 +40,8 @@ public class AnimationController : MonoBehaviour
 
 		eventManager.AddListener("Mover_Jumping", () => { SetAnimatorVariable("Jumping", true); });
 
-		eventManager.AddListener("Mover_Orienting_True", () => SetAnimatorVariable("Gravity", true));
-		eventManager.AddListener("Mover_Orienting_False", () => SetAnimatorVariable("Gravity", false));
+		eventManager.AddListener("Rotator_Orienting_True", () => SetAnimatorVariable("Gravity", true));
+		eventManager.AddListener("Rotator_Orienting_False", () => SetAnimatorVariable("Gravity", false));
 	}
 
 	private void SetAnimatorVariable(string name, bool value) {

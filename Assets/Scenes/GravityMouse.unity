@@ -309,7 +309,6 @@ MonoBehaviour:
   movementSpeed: 6
   runningMultiplier: 2
   jumpForce: 8
-  timeToRotate: 0.5
 --- !u!114 &41617291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,7 +1150,6 @@ MonoBehaviour:
   bounds: 0
   minCameraPos: {x: 0, y: 0, z: 0}
   maxCameraPos: {x: 0, y: 0, z: 0}
-  yOffset: 4
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -3753,6 +3751,7 @@ GameObject:
   - component: {fileID: 1957089959}
   - component: {fileID: 1957089961}
   - component: {fileID: 1957089958}
+  - component: {fileID: 1957089962}
   - component: {fileID: 1957089960}
   - component: {fileID: 1957089949}
   m_Layer: 0
@@ -3929,7 +3928,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957089948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -3976,7 +3975,6 @@ MonoBehaviour:
   movementSpeed: 6
   runningMultiplier: 2
   jumpForce: 8
-  timeToRotate: 0.5
 --- !u!114 &1957089959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4020,6 +4018,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   groundRadius: 0.2
+--- !u!114 &1957089962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957089948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72384ed0bd8a58143b2dd62e50c651f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRotate: 0.5
 --- !u!1 &2028184233
 GameObject:
   m_ObjectHideFlags: 0

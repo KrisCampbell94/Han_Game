@@ -7,8 +7,9 @@ public class PlayerInput : MonoBehaviour
 	private EventManager eventManager;
 	private Gravity gravity;
     private EntityMover entityMover;
+    private EntityRotator entityRotator;
 
-	private Direction direction;
+    private Direction direction;
 	private Movement movement;
 	
 	// Start is called before the first frame update
@@ -16,6 +17,7 @@ public class PlayerInput : MonoBehaviour
 		eventManager = GetComponent<EventManager>();
 		gravity = GetComponent<Gravity>();
         entityMover = GetComponent<EntityMover>();
+        entityRotator = GetComponent<EntityRotator>();
 
 		// Current input affecting movement
 		// May differ fron actual movement in case of obstacles, being in the air, etc
@@ -36,7 +38,7 @@ public class PlayerInput : MonoBehaviour
 		// If holding gravity key (shift)
 		if (gravityButtonDown) {
 			// Do gravity change
-            if (!entityMover.orienting)
+            if (!entityRotator.orienting)
             {
                 GravityInput(horizontalMove, verticalMove);
             }
