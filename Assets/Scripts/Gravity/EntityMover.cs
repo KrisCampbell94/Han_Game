@@ -5,6 +5,7 @@ public class EntityMover : MonoBehaviour
 {
     public enum Direction { Left, Right }
     public enum Movement { Stopped, Walking, Running }
+    public enum Jumping { No, Yes }
 
     public float movementSpeed = 6.0f;
     public float runningMultiplier = 2;
@@ -18,11 +19,18 @@ public class EntityMover : MonoBehaviour
     // Current movement state
     private Movement movement;
 
+    // Current jumping state
+    private Jumping jumping;
+
     // Movement
     float movementMultiplier = 0; // 0 for stop, 1 for move, runningMultiplier for run
     float directionMultiplier = 1; // 1 for right, -1 for left
     float directionFlipper = 1; // 1 for normal (Gravity South or East), -1 for flipped (Gravity North or West)
+    float jumpFlipper = 1;
     bool moveOnX = true;
+
+    // Jumping
+    float jumpMultiplier = 0;
 
     // Current grounded state
     private bool grounded;
@@ -49,6 +57,9 @@ public class EntityMover : MonoBehaviour
         eventManager.AddListener("Input_Stopping", () => SetMovement(Movement.Stopped));
         eventManager.AddListener("Input_Walking", () => SetMovement(Movement.Walking));
         eventManager.AddListener("Input_Running", () => SetMovement(Movement.Running));
+
+        eventManager.AddListener("Input_JumpUp", () => SetJumping(Jumping.Yes));
+        eventManager.AddListener("Input_FallDown", () => SetJumping(Jumping.No));
 
         // Add listeners to react to gravity change
         eventManager.AddListener("Gravity_North", () => RotateSelfToGravity(GravityDirection.North));
@@ -99,6 +110,23 @@ public class EntityMover : MonoBehaviour
         }
     }
 
+    private void UpdateJumping()
+    {
+        float jumpDelta = jumpMultiplier * jumpFlipper;
+        // Update Velocity
+        if (jumpDelta != 0)
+        {
+            if (moveOnX)
+            {
+                rBody2D.velocity = new Vector2(rBody2D.velocity.x, jumpDelta);
+            }
+            else
+            {
+                rBody2D.velocity = new Vector2(jumpDelta, rBody2D.velocity.y);
+            } 
+        }
+    }
+
     // Events
 
     private void SetDirection(Direction newDirection)
@@ -136,6 +164,31 @@ public class EntityMover : MonoBehaviour
         }
     }
 
+    private void SetJumping(Jumping newJumping)
+    {
+        jumping = newJumping;
+
+        // Set velocity jumping
+        switch (jumping)
+        {
+            case Jumping.No:
+                //if(moveOnX)
+                //{
+                //    jumpMultiplier = rBody2D.velocity.y - 0.5f;
+                //}
+                //else
+                //{
+                //    jumpMultiplier = rBody2D.velocity.x - 0.5f;
+                //}
+                jumpMultiplier = 0;
+                break;
+            case Jumping.Yes:
+                jumpMultiplier = 8;
+                UpdateJumping();
+                break;
+        }
+    }
+
     private void RotateSelfToGravity(GravityDirection gravityDirection)
     {
         // Store current time and angle
@@ -152,22 +205,26 @@ public class EntityMover : MonoBehaviour
                 destAngleZ = 180;
                 moveOnX = true;
                 directionFlipper = -1;
+                jumpFlipper = -1;
                 break;
             case GravityDirection.East:
                 destAngleZ = 90;
                 moveOnX = false;
                 directionFlipper = 1;
+                jumpFlipper = -1;
                 break;
             case GravityDirection.South:
             default:
                 destAngleZ = 0;
                 moveOnX = true;
                 directionFlipper = 1;
+                jumpFlipper = 1;
                 break;
             case GravityDirection.West:
                 destAngleZ = 270;
                 moveOnX = false;
                 directionFlipper = -1;
+                jumpFlipper = 1;
                 break;
         }
     }
