@@ -3547,7 +3547,9 @@ GameObject:
   - component: {fileID: 1957089955}
   - component: {fileID: 1957089957}
   - component: {fileID: 1957089959}
+  - component: {fileID: 1957089961}
   - component: {fileID: 1957089958}
+  - component: {fileID: 1957089960}
   - component: {fileID: 1957089949}
   m_Layer: 0
   m_Name: Han_Player
@@ -3568,7 +3570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6968b6868ab10148b57e07b3dcaaf55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityKey: 304
 --- !u!95 &1957089950
 Animator:
   serializedVersion: 3
@@ -3605,7 +3606,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0625, y: 3.9399405}
+    oldSize: {x: 2.0625, y: 3.9375}
     newSize: {x: 2.0625, y: 3.9399405}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3734,7 +3735,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0625, y: 3.9399405}
+    oldSize: {x: 2.0625, y: 3.9375}
     newSize: {x: 2.0625, y: 3.9399405}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3768,6 +3769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b4f15b9ad75c7439da6685379d3a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 6
+  runningMultiplier: 2
   timeToRotate: 0.5
 --- !u!114 &1957089959
 MonoBehaviour:
@@ -3782,6 +3785,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityMagnitude: 9.8
+--- !u!114 &1957089960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957089948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d162ba13cfe8c043a1ffbde1ff02033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1957089961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957089948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c638ed3815e67264eabec1ebe74af8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCheck: {fileID: 652624544}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  groundRadius: 0.2
 --- !u!1 &2028184233
 GameObject:
   m_ObjectHideFlags: 0
