@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CameraControllerScript : MonoBehaviour
 {
-	private GameObject player;
-	
 	public bool bounds = true;
 	public Vector3 minCameraPos, maxCameraPos;
-	
-    // Start is called before the first frame update
-    void Start() {
+	public float yOffset = 4;
+
+	private GameObject player;
+
+	// Start is called before the first frame update
+	void Start() {
         player = GameObject.FindWithTag("Player");
     }
 
@@ -18,6 +19,7 @@ public class CameraControllerScript : MonoBehaviour
 		// Update the position of the camera relative to the player
 		Vector3 newPosition = player.transform.position;
 		newPosition.z = transform.position.z;
+		newPosition.y += yOffset;
 		transform.position = newPosition;
 
 		// Update rotation of camera relative to player
