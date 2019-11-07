@@ -9,12 +9,11 @@ public class EntityMover : MonoBehaviour
 	public float movementSpeed = 6.0f;
 	public float runningMultiplier = 2;
 	public float jumpForce = 8;
-
-    public bool orienting { get; private set; } // Enabled when rotating, disabled when done
-
+    
     private EventManager eventManager;
 	private Rigidbody2D rBody2D;
 	private GroundChecker groundChecker;
+    private EntityRotator entityRotator;
 
 	// Current movement direction relative to self
 	private Direction direction;
@@ -28,21 +27,16 @@ public class EntityMover : MonoBehaviour
 	float directionFlipper = 1; // 1 for normal (Gravity South or East), -1 for flipped (Gravity North or West)
 	float jumpFlipper = 1;
 	bool moveOnX = true;
-
-	// Rotation Lerping
-	public float timeToRotate = 0.5f; // Seconds
-	private float startTime; // Time when started rotating
-	private Vector3 startAngle; // Angle when started rotating
-	private float destAngleZ; // Angle to rotate to
-
+    
 	// Start is called before the first frame update
 	void Start() {
 		eventManager = GetComponent<EventManager>();
 		rBody2D = GetComponent<Rigidbody2D>();
 		groundChecker = GetComponent<GroundChecker>();
+        entityRotator = GetComponent<EntityRotator>();
 
-		// Initial direction and movement
-		SetDirection(Direction.Right);
+        // Initial direction and movement
+        SetDirection(Direction.Right);
 		SetMovement(Movement.Stopped);
 
 		// Add listeners to react to input
@@ -56,51 +50,22 @@ public class EntityMover : MonoBehaviour
 		eventManager.AddListener("Input_Jump", Jump);
 
 		// Add listeners to react to gravity change
-		eventManager.AddListener("Gravity_North", () => RotateSelfToGravity(GravityDirection.North));
-		eventManager.AddListener("Gravity_East", () => RotateSelfToGravity(GravityDirection.East));
-		eventManager.AddListener("Gravity_South", () => RotateSelfToGravity(GravityDirection.South));
-		eventManager.AddListener("Gravity_West", () => RotateSelfToGravity(GravityDirection.West));
+		eventManager.AddListener("Gravity_North", () => RotateMovementToGravity(GravityDirection.North));
+		eventManager.AddListener("Gravity_East", () => RotateMovementToGravity(GravityDirection.East));
+		eventManager.AddListener("Gravity_South", () => RotateMovementToGravity(GravityDirection.South));
+		eventManager.AddListener("Gravity_West", () => RotateMovementToGravity(GravityDirection.West));
 	}
 
 	private void FixedUpdate() {
-		// If not orientated right, orient first. Otherwise, move normally.
-		if (orienting) {
-			UpdateOrientation();
-		} else {
+        // If no rotator, just update movement
+        // If has rotator, make sure it's not orienting
+        if (entityRotator == null || !entityRotator.orienting) {
 			UpdateMovement();
 		}
 	}
 
 	// Updates
-
-	// TODO: Take current orientation into account?
-	private void UpdateOrientation() {
-		// Get new angle for this update
-		Vector3 newAngle = startAngle;
-		float rotateDelta = (Time.time - startTime) / timeToRotate;
-		newAngle.z = Mathf.Lerp(startAngle.z, destAngleZ, rotateDelta);
-
-		// Set transform to new angle
-		transform.eulerAngles = newAngle;
-
-        // If angle has reached 360, reset the dest to 0
-        if (newAngle.z == 360)
-        {
-            destAngleZ = 0;
-        } else if (newAngle.z == -90) // If angle reached -90, reset dest to 270
-        {
-            destAngleZ = 270;
-        }
-
-		// If reached destination rotation
-		if (transform.eulerAngles.z == destAngleZ) {
-			// Disable orienting state
-			orienting = false;
-			eventManager.InvokeEvent("Mover_Orienting_" + orienting);
-
-		}
-	}
-
+    
 	private void UpdateMovement() {
 		float moveDelta = movementSpeed * movementMultiplier * directionMultiplier * directionFlipper;
 
@@ -160,60 +125,33 @@ public class EntityMover : MonoBehaviour
 		}
 	}
 
-	private void RotateSelfToGravity(GravityDirection gravityDirection) {
-		// Store current time and angle
-		startTime = Time.time;
-		startAngle = transform.eulerAngles;
-
+	private void RotateMovementToGravity(GravityDirection gravityDirection) {
 		// Depending on direction, set
-		// New entity angle
 		// Whether movement is on x or y
 		// Whether movement direction is flipped or not
 		// Whether jump direction is flipped or not
 		switch (gravityDirection) {
 			case GravityDirection.North:
-				destAngleZ = 180;
 				moveOnX = true;
 				directionFlipper = -1;
 				jumpFlipper = -1;
 				break;
 			case GravityDirection.East:
-				destAngleZ = 90;
 				moveOnX = false;
 				directionFlipper = 1;
 				jumpFlipper = -1;
 				break;
 			case GravityDirection.South:
 			default:
-                destAngleZ = 0;
-                // Smart rotate
-                if (startAngle.z == 270)
-                {
-                    destAngleZ = 360;
-                }
-
                 moveOnX = true;
 				directionFlipper = 1;
 				jumpFlipper = 1;
 				break;
 			case GravityDirection.West:
-				destAngleZ = 270;
-                // Smart rotate
-                if (startAngle.z == 0)
-                {
-                    destAngleZ = -90;
-                }
-
                 moveOnX = false;
 				directionFlipper = -1;
 				jumpFlipper = 1;
 				break;
 		}
-
-        Debug.Log(startAngle.z + " " + destAngleZ);
-
-		// Enable orienting state
-		orienting = true;
-		eventManager.InvokeEvent("Mover_Orienting_" + orienting);
 	}
 }
