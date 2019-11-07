@@ -9,8 +9,7 @@ public class PlayerInput : MonoBehaviour
 
 	private Direction direction;
 	private Movement movement;
-	private bool jumping;
-
+	
 	// Start is called before the first frame update
 	void Start() {
 		eventManager = GetComponent<EventManager>();
@@ -23,9 +22,6 @@ public class PlayerInput : MonoBehaviour
 		// Current input affecting direction
 		// Likely matches actual direction, since turning around is not hindered by obstacles
 		direction = Direction.Right;
-
-		// Current input affecting jumping
-		jumping = false;
 	}
 
 	private void FixedUpdate() {
@@ -98,7 +94,6 @@ public class PlayerInput : MonoBehaviour
 
 	private void JumpInput(bool jumpButton) {
 		if (jumpButton) {
-			jumping = true;
 			eventManager.InvokeEvent("Input_Jump");
 		}
 	}
