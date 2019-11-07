@@ -32,20 +32,16 @@ public class PlayerInput : MonoBehaviour
         float verticalMove = Input.GetAxis("Vertical");
         bool gravityButtonDown = Input.GetButton("Gravity");
 
-        // If there is movement
-        if (horizontalMove != 0 || verticalMove != 0)
+        // If holding gravity key (shift)
+        if (gravityButtonDown)
         {
-            // If holding gravity key (shift)
-            if (gravityButtonDown)
-            {
-                // Do gravity change
-                GravityInput(horizontalMove, verticalMove);
-            }
-            else
-            {
-                // Otherwise, normal movement
-                MovementInput(horizontalMove, verticalMove);
-            }
+            // Do gravity change
+            GravityInput(horizontalMove, verticalMove);
+        }
+        else
+        {
+            // Otherwise, normal movement
+            MovementInput(horizontalMove, verticalMove);
         }
     }
 
