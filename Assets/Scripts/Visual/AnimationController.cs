@@ -40,11 +40,24 @@ public class AnimationController : MonoBehaviour
 
 		eventManager.AddListener("Mover_Jumping", () => { SetAnimatorVariable("Jumping", true); });
 
-		eventManager.AddListener("Rotator_Orienting_True", () => SetAnimatorVariable("Gravity", true));
+        eventManager.AddListener("Attacking_Range",() => { SetAnimatorVariable("Attacking", true); }); //~
+
+        eventManager.AddListener("Attacking_Close", () =>{ SetAnimatorVariable("CloseAttacking",true); }); //~
+
+        eventManager.AddListener("Rotator_Orienting_True", () => SetAnimatorVariable("Gravity", true));
 		eventManager.AddListener("Rotator_Orienting_False", () => SetAnimatorVariable("Gravity", false));
 	}
 
 	private void SetAnimatorVariable(string name, bool value) {
 		animator.SetBool(name, value);
 	}
+
+    private void AttackingFinish() //~
+    {
+        SetAnimatorVariable("Attacking", false);
+    }
+    private void CloseAttackingFinish() //~
+    {
+        SetAnimatorVariable("CloseAttacking", false);
+    }
 }

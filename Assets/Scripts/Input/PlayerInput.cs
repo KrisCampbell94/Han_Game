@@ -9,6 +9,8 @@ public class PlayerInput : MonoBehaviour
     private EntityMover entityMover;
     private EntityRotator entityRotator;
 
+    private PlayerEncounterScript encounter; //~
+
     private Direction direction;
 	private Movement movement;
 	
@@ -19,9 +21,13 @@ public class PlayerInput : MonoBehaviour
         entityMover = GetComponent<EntityMover>();
         entityRotator = GetComponent<EntityRotator>();
 
-		// Current input affecting movement
-		// May differ fron actual movement in case of obstacles, being in the air, etc
-		movement = Movement.Stopped;
+        // This grabs the gameobject within the player called playerRange,
+        //  takes the script of that object in order to check whether an enemy is close or not.
+        encounter = GameObject.Find("playerRange").GetComponent<PlayerEncounterScript>();//~
+
+        // Current input affecting movement
+        // May differ fron actual movement in case of obstacles, being in the air, etc
+        movement = Movement.Stopped;
 
 		// Current input affecting direction
 		// Likely matches actual direction, since turning around is not hindered by obstacles
@@ -33,10 +39,11 @@ public class PlayerInput : MonoBehaviour
 		float horizontalMove = Input.GetAxis("Horizontal");
 		float verticalMove = Input.GetAxis("Vertical");
 		bool gravityButtonDown = Input.GetButton("Gravity");
-		bool jumpButton = Input.GetButtonDown("Jump");
+		bool jumpButton = Input.GetButton("Jump");
+        bool attackButton = Input.GetButtonDown("Attack");//~
 
-		// If holding gravity key (shift)
-		if (gravityButtonDown) {
+        // If holding gravity key (shift)
+        if (gravityButtonDown) {
 			// Do gravity change
             if (!entityRotator.orienting)
             {
@@ -46,6 +53,7 @@ public class PlayerInput : MonoBehaviour
 			// Otherwise, normal movement
 			MovementInput(horizontalMove, verticalMove);
 			JumpInput(jumpButton);
+            AttackInput(attackButton);
 		}
 	}
 
@@ -103,7 +111,25 @@ public class PlayerInput : MonoBehaviour
 		if (jumpButton) {
 			eventManager.InvokeEvent("Input_Jump");
 		}
+        else
+        {
+            eventManager.InvokeEvent("Output_Jump");
+        }
 	}
+    private void AttackInput(bool attackButton) //~
+    {
+        if (attackButton)
+        {
+            if (encounter.isEnemyClose)
+            {
+                eventManager.InvokeEvent("Attacking_Close");
+            }
+            else
+            {
+                eventManager.InvokeEvent("Attacking_Range");
+            }
+        }
+    }
 
 	private void GravityInput(float horizontalMove, float verticalMove) {
 		// If vertical change

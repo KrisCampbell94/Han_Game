@@ -9,14 +9,17 @@ public class EntityMover : MonoBehaviour
 	public float movementSpeed = 6.0f;
 	public float runningMultiplier = 2;
 	public float jumpForce = 8;
+    public float quickFallForce = -0.5f; // Must be a negative number
     
     private EventManager eventManager;
 	private Rigidbody2D rBody2D;
 	private GroundChecker groundChecker;
     private EntityRotator entityRotator;
 
-	// Current movement direction relative to self
-	private Direction direction;
+    private Transform attackLocation; //~
+
+    // Current movement direction relative to self
+    private Direction direction;
 
 	// Current movement state
 	private Movement movement;
@@ -35,6 +38,8 @@ public class EntityMover : MonoBehaviour
 		groundChecker = GetComponent<GroundChecker>();
         entityRotator = GetComponent<EntityRotator>();
 
+        attackLocation = GameObject.Find("attackLocation").transform;
+
         // Initial direction and movement
         SetDirection(Direction.Right);
 		SetMovement(Movement.Stopped);
@@ -48,9 +53,13 @@ public class EntityMover : MonoBehaviour
 		eventManager.AddListener("Input_Running", () => SetMovement(Movement.Running));
 		//
 		eventManager.AddListener("Input_Jump", Jump);
+        eventManager.AddListener("Output_Jump", QuickFall);
+        //
+        eventManager.AddListener("Attacking_Range",() => Attacking(false));//~
+        eventManager.AddListener("Attacking_Close",() => Attacking(true));//~
 
-		// Add listeners to react to gravity change
-		eventManager.AddListener("Gravity_North", () => RotateMovementToGravity(GravityDirection.North));
+        // Add listeners to react to gravity change
+        eventManager.AddListener("Gravity_North", () => RotateMovementToGravity(GravityDirection.North));
 		eventManager.AddListener("Gravity_East", () => RotateMovementToGravity(GravityDirection.East));
 		eventManager.AddListener("Gravity_South", () => RotateMovementToGravity(GravityDirection.South));
 		eventManager.AddListener("Gravity_West", () => RotateMovementToGravity(GravityDirection.West));
@@ -124,6 +133,62 @@ public class EntityMover : MonoBehaviour
 			}
 		}
 	}
+    private void QuickFall()
+    {
+        if (!groundChecker.grounded)
+        {
+            // Set the quick fall velocity
+            float quickFallDelta = quickFallForce * jumpFlipper;
+
+            // Quick fall opposing to gravity direction
+            if (moveOnX)
+            {
+                rBody2D.velocity = new Vector2(rBody2D.velocity.x, rBody2D.velocity.y + quickFallDelta);
+            }
+            else
+            {
+                rBody2D.velocity = new Vector2(rBody2D.velocity.x + quickFallDelta, rBody2D.velocity.y);
+            }
+        }
+    }
+
+    private void Attacking(bool isCloseNotRange)//~
+    {
+        if (isCloseNotRange)
+        {
+            print("CLOSE RANGE ATTACKING HERE");
+        }
+        else
+        {
+            GameObject kunai = KunaiPoolerScript.sharedInstance.GetPooledKunais();
+            if(kunai != null)
+            {
+                KunaiScript kunaiScript = kunai.GetComponent<KunaiScript
+                    >();
+                // FIX THE GRAVITY IMPLEMENTATION
+                //  Gravity South and East Work
+                kunaiScript.directionFlip = directionFlipper;
+                if(direction == Direction.Right && moveOnX)
+                {
+                    kunaiScript.turningAndGravity = KunaiScript.TurningAndGravity.isRightMoveX;
+                }
+                else if(direction == Direction.Right && !moveOnX)
+                {
+                    kunaiScript.turningAndGravity = KunaiScript.TurningAndGravity.isRightMoveY;
+                }
+                else if (direction == Direction.Left && moveOnX)
+                {
+                    kunaiScript.turningAndGravity = KunaiScript.TurningAndGravity.isLeftMoveX;
+                }
+                else if (direction == Direction.Left && !moveOnX)
+                {
+                    kunaiScript.turningAndGravity = KunaiScript.TurningAndGravity.isLeftMoveY;
+                }
+                kunai.transform.position = attackLocation.position;
+                kunai.SetActive(true);
+            }
+        }
+    }
 
 	private void RotateMovementToGravity(GravityDirection gravityDirection) {
 		// Depending on direction, set

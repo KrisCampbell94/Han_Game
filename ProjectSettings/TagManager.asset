@@ -9,6 +9,7 @@ TagManager:
   - PlayerWeapon
   - Enemy
   - EnemyWeapon
+  - PlayerRange
   layers:
   - Default
   - TransparentFX
