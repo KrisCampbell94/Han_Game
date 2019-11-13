@@ -7,6 +7,8 @@ public class ScoreManager : MonoBehaviour
 {
 
 	public Text scoreText;
+    public Text timeText;
+    
 	public enum ScoreType { Time }
 
 	public ScoreType scoreType = ScoreType.Time;
@@ -28,8 +30,10 @@ public class ScoreManager : MonoBehaviour
 	void Update() {
 		if (trackTime) {
 			UpdateTime();
-			scoreText.Text = timeSinceStart.ToString();
-		}
+			scoreText.text = score.ToString();
+            timeText.text = timeSinceStart.ToString();
+
+        }
 	}
 
 	public void StartTime() {
@@ -41,11 +45,13 @@ public class ScoreManager : MonoBehaviour
 		float timeNow = Time.time;
 		timeSinceStart = timeNow - timeStart;
 		score = maxScore - Mathf.RoundToInt(timeSinceStart * scorePerSecond);
-		
+        StopTime();
 	}
 
 	public void StopTime() {
-		UpdateTime();
-		trackTime = false;
+        if (score <= 0)
+        {
+            trackTime = false;
+        }
 	}
 }
