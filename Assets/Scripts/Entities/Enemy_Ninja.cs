@@ -63,7 +63,7 @@ public class Enemy_NinjaScript : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<PlayerControllerScript>().isCloseAttacking)
             {
-                GetComponent<HitPointScript>().SubtractHitPoints(5);
+                GetComponent<HitPoints>().SubtractHitPoints(5);
             }
         }
     }

@@ -31,6 +31,11 @@ public class EventManager : MonoBehaviour {
 
 	// Invoke all associated listeners
 	public void InvokeEvent(string eventName) {
+        if(eventName == "Output_Jump") //~
+        {
+            // Added due to multiple logs containing Output_Jump
+            return;
+        }
 		if (debug) {
 			Debug.Log("Invoked " + eventName);
 		}

@@ -156,18 +156,24 @@ public class EntityMover : MonoBehaviour
     {
         if (isCloseNotRange)
         {
-            print("CLOSE RANGE ATTACKING HERE");
+            GetComponent<HitBox>().Enabled = true;
         }
         else
         {
+            // Get the pool of Kunais
             GameObject kunai = KunaiPoolerScript.sharedInstance.GetPooledKunais();
+
             if(kunai != null)
             {
+                // Obtain the scripting of the Kunai to perform in-script tactics
                 KunaiScript kunaiScript = kunai.GetComponent<KunaiScript
                     >();
-                // FIX THE GRAVITY IMPLEMENTATION
-                //  Gravity South and East Work
+                // Set the direction flipper to the kunai.
                 kunaiScript.directionFlip = directionFlipper;
+                // Set the euler angles of the kunai to match with the player
+                kunai.transform.eulerAngles = transform.eulerAngles;
+                // Setting the Enumerate of Turning and Gravity of the Kunai
+                //  on the dependence of the direction and gravity movement
                 if(direction == Direction.Right && moveOnX)
                 {
                     kunaiScript.turningAndGravity = KunaiScript.TurningAndGravity.isRightMoveX;
@@ -184,7 +190,9 @@ public class EntityMover : MonoBehaviour
                 {
                     kunaiScript.turningAndGravity = KunaiScript.TurningAndGravity.isLeftMoveY;
                 }
+                // Bring the kunai from its current position to the player's position
                 kunai.transform.position = attackLocation.position;
+                // Activate kunai.
                 kunai.SetActive(true);
             }
         }

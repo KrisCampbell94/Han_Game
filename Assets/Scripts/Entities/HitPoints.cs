@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HitPointScript : MonoBehaviour
+public class HitPoints : MonoBehaviour
 {
     public int hitPoints;
 	public int maxHitPoints = 10;

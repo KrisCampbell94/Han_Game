@@ -229,7 +229,7 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy" && !isCloseAttacking)
         {
-            GetComponent<HitPointScript>().SubtractHitPoints(4);
+            GetComponent<HitPoints>().SubtractHitPoints(4);
         }
         
     }

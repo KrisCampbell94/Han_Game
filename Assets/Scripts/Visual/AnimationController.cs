@@ -59,5 +59,6 @@ public class AnimationController : MonoBehaviour
     private void CloseAttackingFinish() //~
     {
         SetAnimatorVariable("CloseAttacking", false);
+        GetComponent<HitBox>().Enabled = false;
     }
 }
