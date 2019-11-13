@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
+
+	public Text scoreText;
 	public enum ScoreType { Time }
 
 	public ScoreType scoreType = ScoreType.Time;
@@ -25,6 +28,7 @@ public class ScoreManager : MonoBehaviour
 	void Update() {
 		if (trackTime) {
 			UpdateTime();
+			scoreText.Text = timeSinceStart.ToString();
 		}
 	}
 
@@ -37,6 +41,7 @@ public class ScoreManager : MonoBehaviour
 		float timeNow = Time.time;
 		timeSinceStart = timeNow - timeStart;
 		score = maxScore - Mathf.RoundToInt(timeSinceStart * scorePerSecond);
+		
 	}
 
 	public void StopTime() {
