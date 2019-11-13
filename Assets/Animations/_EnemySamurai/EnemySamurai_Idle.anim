@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Han_Attack_Kunai
+  m_Name: Samurai_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2881766274086401744, guid: a19b55e927450274b92345f8924b49a5,
-        type: 3}
-    - time: 0.083333336
-      value: {fileID: -3122310062206680425, guid: a19b55e927450274b92345f8924b49a5,
-        type: 3}
-    - time: 0.16666667
-      value: {fileID: -6278056163033956229, guid: a19b55e927450274b92345f8924b49a5,
+      value: {fileID: 9083226530838185265, guid: d4409b27d855e704982f08b1d81c1046,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,15 +41,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2881766274086401744, guid: a19b55e927450274b92345f8924b49a5, type: 3}
-    - {fileID: -3122310062206680425, guid: a19b55e927450274b92345f8924b49a5, type: 3}
-    - {fileID: -6278056163033956229, guid: a19b55e927450274b92345f8924b49a5, type: 3}
+    - {fileID: 9083226530838185265, guid: d4409b27d855e704982f08b1d81c1046, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.083333336
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -74,11 +66,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.16666667
-    functionName: AttackingFinish
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

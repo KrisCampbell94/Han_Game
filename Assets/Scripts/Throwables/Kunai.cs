@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KunaiScript : MonoBehaviour
+public class Kunai : MonoBehaviour
 {
     public bool isRight = true; // Don't Delete YET
     public bool onMoveX = true;
@@ -55,15 +55,7 @@ public class KunaiScript : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(gameObject.tag == "EnemyWeapon" && collision.gameObject.tag == "Player")
-        {
-            if (!collision.gameObject.GetComponent<PlayerControllerScript>().isCloseAttacking)
-            {
-                collision.gameObject.GetComponent<HitPoints>().SubtractHitPoints(1);
-            }
-            gameObject.SetActive(false);
-        }
-        if(gameObject.tag == "PlayerWeapon" && collision.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<HitPoints>().SubtractHitPoints(3);
             gameObject.SetActive(false);

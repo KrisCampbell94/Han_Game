@@ -36,4 +36,8 @@ public class HitBox : MonoBehaviour
             hitboxCollider.offset = offsetDelta;
         }
     }
+    public void EnableHitbox()
+    {
+        Enabled = true;
+    }
 }

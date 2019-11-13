@@ -121,10 +121,10 @@ public class PlayerControllerScript : MonoBehaviour
             if (!isEnemyClose)
             {
                 isAttacking = true;
-                GameObject weaponA = KunaiPoolerScript.sharedInstance.GetPooledKunais();
+                GameObject weaponA = KunaiPooler.sharedInstance.GetPooledKunais();
                 if (weaponA != null)
                 {
-                    KunaiScript weaponAScript = weaponA.GetComponent<KunaiScript>();
+                    Kunai weaponAScript = weaponA.GetComponent<Kunai>();
                     weaponAScript.isRight = (transform.eulerAngles.y == 0);
                     weaponA.transform.position = attackLocation.transform.position;
                     weaponA.SetActive(true);

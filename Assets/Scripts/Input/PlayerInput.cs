@@ -13,6 +13,9 @@ public class PlayerInput : MonoBehaviour
 
     private Direction direction;
 	private Movement movement;
+
+    private bool attackTimer = false;
+    private float timer = 1; //~
 	
 	// Start is called before the first frame update
 	void Start() {
@@ -53,7 +56,21 @@ public class PlayerInput : MonoBehaviour
 			// Otherwise, normal movement
 			MovementInput(horizontalMove, verticalMove);
 			JumpInput(jumpButton);
-            AttackInput(attackButton);
+            if (!attackTimer)
+            {
+                AttackInput(attackButton);
+            }
+            else
+            {
+                timer += Time.deltaTime;
+                int seconds = (int)timer % 60;
+                if(seconds % 2 == 0)
+                {
+                    timer = 1;
+                    attackTimer = false;
+                }
+            }
+            
 		}
 	}
 
@@ -127,6 +144,7 @@ public class PlayerInput : MonoBehaviour
             else
             {
                 eventManager.InvokeEvent("Attacking_Range");
+                attackTimer = true;
             }
         }
     }
