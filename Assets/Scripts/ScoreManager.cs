@@ -31,7 +31,7 @@ public class ScoreManager : MonoBehaviour
 		if (trackTime) {
 			UpdateTime();
 			scoreText.text = score.ToString();
-            timeText.text = timeSinceStart.ToString();
+            timeText.text = Mathf.FloorToInt(timeSinceStart).ToString();
 
         }
 	}
