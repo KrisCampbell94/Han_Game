@@ -309,6 +309,8 @@ MonoBehaviour:
   movementSpeed: 6
   runningMultiplier: 2
   jumpForce: 8
+  quickFallForce: -0.5
+  attackLocation: {fileID: 0}
 --- !u!114 &41617291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,9 +659,8 @@ GameObject:
   - component: {fileID: 114669089}
   - component: {fileID: 114669092}
   - component: {fileID: 114669091}
-  - component: {fileID: 114669090}
   m_Layer: 5
-  m_Name: TimeText
+  m_Name: ScoreValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -677,30 +678,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 398953208}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -15, y: 236.5}
   m_SizeDelta: {x: 771, y: 55.92}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &114669090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114669088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8032e9129f5da26408dd831313c3e05f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 922891975}
-  timeText: {fileID: 114669091}
-  scoreType: 0
-  scorePerSecond: 1
-  maxScore: 500
 --- !u!114 &114669091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,8 +1171,8 @@ RectTransform:
   m_Children:
   - {fileID: 589051114}
   - {fileID: 1667672920}
-  - {fileID: 922891973}
   - {fileID: 114669089}
+  - {fileID: 922891973}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1632,7 +1616,7 @@ GameObject:
   - component: {fileID: 589051116}
   - component: {fileID: 589051115}
   m_Layer: 5
-  m_Name: Score
+  m_Name: ScoreLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,9 +2282,8 @@ GameObject:
   - component: {fileID: 922891973}
   - component: {fileID: 922891976}
   - component: {fileID: 922891975}
-  - component: {fileID: 922891974}
   m_Layer: 5
-  m_Name: ScoreText
+  m_Name: TimeValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2318,30 +2301,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 398953208}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -15, y: 185.02}
   m_SizeDelta: {x: 771, y: 55.92}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &922891974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922891972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8032e9129f5da26408dd831313c3e05f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 922891975}
-  timeText: {fileID: 0}
-  scoreType: 0
-  scorePerSecond: 1
-  maxScore: 500
 --- !u!114 &922891975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3639,7 +3605,7 @@ GameObject:
   - component: {fileID: 1667672922}
   - component: {fileID: 1667672921}
   m_Layer: 5
-  m_Name: Time
+  m_Name: TimeLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4259,7 +4225,7 @@ GameObject:
   - component: {fileID: 1957089951}
   - component: {fileID: 1957089956}
   - component: {fileID: 1957089955}
-  - component: {fileID: 1957089963}
+  - component: {fileID: 1957089964}
   - component: {fileID: 1957089957}
   - component: {fileID: 1957089959}
   - component: {fileID: 1957089961}
@@ -4488,6 +4454,8 @@ MonoBehaviour:
   movementSpeed: 6
   runningMultiplier: 2
   jumpForce: 8
+  quickFallForce: -0.5
+  attackLocation: {fileID: 0}
 --- !u!114 &1957089959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4544,7 +4512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToRotate: 0.5
---- !u!114 &1957089963
+--- !u!114 &1957089964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4556,11 +4524,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8032e9129f5da26408dd831313c3e05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  timeText: {fileID: 0}
   scoreType: 0
   scorePerSecond: 1
-  maxScore: 600
+  maxScore: 1000
+  scoreText: {fileID: 114669091}
+  timeText: {fileID: 922891975}
 --- !u!1 &2028184233
 GameObject:
   m_ObjectHideFlags: 0
