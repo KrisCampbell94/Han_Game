@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HitPoints : MonoBehaviour
 {
@@ -44,8 +45,12 @@ public class HitPoints : MonoBehaviour
 		} 
 		
 		if(hitPoints < 1){
-            gameObject.SetActive(false);
-        }
+			if (tag=="Player") {
+				SceneManager.LoadScene("Lose");
+			} else {
+				gameObject.SetActive(false);
+			}
+		}
     }
     public void AddHitPoints(int pointsToAdd)
     {
