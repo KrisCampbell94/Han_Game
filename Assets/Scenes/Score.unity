@@ -4225,7 +4225,7 @@ GameObject:
   - component: {fileID: 1957089951}
   - component: {fileID: 1957089956}
   - component: {fileID: 1957089955}
-  - component: {fileID: 1957089963}
+  - component: {fileID: 1957089964}
   - component: {fileID: 1957089957}
   - component: {fileID: 1957089959}
   - component: {fileID: 1957089961}
@@ -4233,7 +4233,6 @@ GameObject:
   - component: {fileID: 1957089962}
   - component: {fileID: 1957089960}
   - component: {fileID: 1957089949}
-  - component: {fileID: 1957089964}
   m_Layer: 0
   m_Name: Han_Player
   m_TagString: Player
@@ -4513,23 +4512,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToRotate: 0.5
---- !u!114 &1957089963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957089948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8032e9129f5da26408dd831313c3e05f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreType: 0
-  scorePerSecond: 1
-  maxScore: 600
-  scoreText: {fileID: 0}
-  timeText: {fileID: 0}
 --- !u!114 &1957089964
 MonoBehaviour:
   m_ObjectHideFlags: 0
