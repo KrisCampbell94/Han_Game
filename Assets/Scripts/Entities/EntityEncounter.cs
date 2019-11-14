@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerEncounterScript : MonoBehaviour
+public class EntityEncounter : MonoBehaviour
 {
     public bool isPlayerClose = false;
     public bool isEnemyClose = false;
@@ -18,7 +18,7 @@ public class PlayerEncounterScript : MonoBehaviour
         {
             isEnemyClose = true;
         }
-        if(collider.gameObject.layer == 8)
+        if (collider.gameObject.layer == 8)
         {
             closeToWall = true;
         }

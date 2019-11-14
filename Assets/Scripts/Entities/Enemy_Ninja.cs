@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_NinjaScript : MonoBehaviour
+public class Enemy_Ninja : MonoBehaviour
 {
     public bool isPlayerClose = false;
     public Transform attackLocation;
-    private float timer = 0.0f;
+    private float timer = 1;
     public Transform playerTrackerLeft;
     public Transform playerTrackerRight;
 
@@ -23,14 +23,14 @@ public class Enemy_NinjaScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isPlayerClose = (playerTrackerLeft.GetComponent<PlayerEncounterScript>().isPlayerClose || playerTrackerRight.GetComponent<PlayerEncounterScript>().isPlayerClose);
+        isPlayerClose = (playerTrackerLeft.GetComponent<EntityEncounter>().isPlayerClose || playerTrackerRight.GetComponent<EntityEncounter>().isPlayerClose);
         if (isPlayerClose)
         {
-            if (playerTrackerLeft.GetComponent<PlayerEncounterScript>().isPlayerClose)
+            if (playerTrackerLeft.GetComponent<EntityEncounter>().isPlayerClose)
             {
                 sr.flipX = true;
             }
-            else if (playerTrackerRight.GetComponent<PlayerEncounterScript>().isPlayerClose)
+            else if (playerTrackerRight.GetComponent<EntityEncounter>().isPlayerClose)
             {
                 sr.flipX = false;
             }
@@ -48,11 +48,11 @@ public class Enemy_NinjaScript : MonoBehaviour
 
     void StartAttacking()
     {
-        GameObject weapon = NinjaStarPoolerScript.sharedInstance.GetPooledNinjaStars();
+        GameObject weapon = NinjaStarPooler.sharedInstance.GetPooledNinjaStars();
         if (weapon != null)
         {
-            KunaiScript weaponScript = weapon.GetComponent<KunaiScript>();
-            weaponScript.isRight = (!sr.flipX);
+            NinjaStar weaponScript = weapon.GetComponent<NinjaStar>();
+            weaponScript.FlipX = sr.flipX;
             weapon.transform.position = attackLocation.transform.position;
             weapon.SetActive(true);
         }
@@ -61,9 +61,9 @@ public class Enemy_NinjaScript : MonoBehaviour
     {
 		if (collision.gameObject.tag == "Player")
         {
-            if (collision.gameObject.GetComponent<PlayerControllerScript>().isCloseAttacking)
+            if (collision.GetComponent<HitBox>().Enabled)
             {
-                GetComponent<HitPointScript>().SubtractHitPoints(5);
+                GetComponent<HitPoints>().SubtractHitPoints(5);
             }
         }
     }

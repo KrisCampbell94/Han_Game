@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NinjaStarPoolerScript : MonoBehaviour
+public class NinjaStarPooler : MonoBehaviour
 {
     public List<GameObject> pooledNinjaStar;
     public GameObject ninjaStarToPool;
     public int amountToPool;
-    public static NinjaStarPoolerScript sharedInstance;
+    public static NinjaStarPooler sharedInstance;
     // Start is called before the first frame update
     void Start()
     {

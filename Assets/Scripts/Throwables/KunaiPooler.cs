@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KunaiPoolerScript : MonoBehaviour
+public class KunaiPooler : MonoBehaviour
 {
     public List<GameObject> pooledKunais;
     public GameObject kunaisToPool;
     public int amountToPool;
-    public static KunaiPoolerScript sharedInstance;
+    public static KunaiPooler sharedInstance;
     // Start is called before the first frame update
     void Start()
     {

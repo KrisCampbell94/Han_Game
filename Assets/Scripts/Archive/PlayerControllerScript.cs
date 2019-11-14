@@ -113,7 +113,7 @@ public class PlayerControllerScript : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 0);
         }
 
-		isEnemyClose = enemyTracker.GetComponent<PlayerEncounterScript>().isEnemyClose;
+		isEnemyClose = enemyTracker.GetComponent<EntityEncounter>().isEnemyClose;
         // Attacking Setup
         if (Input.GetButtonDown("Attack"))
         {
@@ -121,10 +121,10 @@ public class PlayerControllerScript : MonoBehaviour
             if (!isEnemyClose)
             {
                 isAttacking = true;
-                GameObject weaponA = KunaiPoolerScript.sharedInstance.GetPooledKunais();
+                GameObject weaponA = KunaiPooler.sharedInstance.GetPooledKunais();
                 if (weaponA != null)
                 {
-                    KunaiScript weaponAScript = weaponA.GetComponent<KunaiScript>();
+                    Kunai weaponAScript = weaponA.GetComponent<Kunai>();
                     weaponAScript.isRight = (transform.eulerAngles.y == 0);
                     weaponA.transform.position = attackLocation.transform.position;
                     weaponA.SetActive(true);
@@ -229,7 +229,7 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy" && !isCloseAttacking)
         {
-            GetComponent<HitPointScript>().SubtractHitPoints(4);
+            GetComponent<HitPoints>().SubtractHitPoints(4);
         }
         
     }
