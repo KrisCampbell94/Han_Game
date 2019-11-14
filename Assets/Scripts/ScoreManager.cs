@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-
-	public Text scoreText;
-    public Text timeText;
-    
 	public enum ScoreType { Time }
 
 	public ScoreType scoreType = ScoreType.Time;
 	public int scorePerSecond = 1;
 	public int maxScore = 60 * 10;
+
+	public Text scoreText;
+	public Text timeText;
 
 	public int score { get; private set; }
 	public float timeSinceStart { get; private set; }
@@ -30,9 +29,6 @@ public class ScoreManager : MonoBehaviour
 	void Update() {
 		if (trackTime) {
 			UpdateTime();
-			scoreText.text = score.ToString();
-            timeText.text = Mathf.FloorToInt(timeSinceStart).ToString();
-
         }
 	}
 
@@ -44,14 +40,18 @@ public class ScoreManager : MonoBehaviour
 	public void UpdateTime() {
 		float timeNow = Time.time;
 		timeSinceStart = timeNow - timeStart;
+
 		score = maxScore - Mathf.RoundToInt(timeSinceStart * scorePerSecond);
-        StopTime();
+		if (score <= 0) {
+			score = 0;
+		}
+
+		// TODO: Use events instead
+		scoreText.text = score.ToString();
+		timeText.text = Mathf.RoundToInt(timeSinceStart).ToString();
 	}
 
 	public void StopTime() {
-        if (score <= 0)
-        {
-            trackTime = false;
-        }
+		trackTime = false;
 	}
 }
