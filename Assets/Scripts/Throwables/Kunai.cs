@@ -55,9 +55,15 @@ public class Kunai : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "WeaponDeflector")
         {
-            collision.gameObject.GetComponent<HitPoints>().SubtractHitPoints(3);
+            gameObject.SetActive(false);
+        }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<HitPoints>().SubtractHitPoints(3); 
+
             gameObject.SetActive(false);
         }
     }

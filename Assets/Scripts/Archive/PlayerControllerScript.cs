@@ -113,7 +113,7 @@ public class PlayerControllerScript : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 0);
         }
 
-		isEnemyClose = enemyTracker.GetComponent<PlayerEncounterScript>().isEnemyClose;
+		isEnemyClose = enemyTracker.GetComponent<EntityEncounter>().isEnemyClose;
         // Attacking Setup
         if (Input.GetButtonDown("Attack"))
         {

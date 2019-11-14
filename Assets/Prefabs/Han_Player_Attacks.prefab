@@ -403,7 +403,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.1, y: 3.9399405}
+  m_Size: {x: 9.1, y: 2.94}
   m_EdgeRadius: 0
 --- !u!114 &4591723402471489640
 MonoBehaviour:
@@ -419,3 +419,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerClose: 0
   isEnemyClose: 0
+  closeToWall: 0

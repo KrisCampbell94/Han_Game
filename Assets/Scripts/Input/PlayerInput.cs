@@ -9,7 +9,7 @@ public class PlayerInput : MonoBehaviour
     private EntityMover entityMover;
     private EntityRotator entityRotator;
 
-    private PlayerEncounterScript encounter; //~
+    private EntityEncounter encounter; //~
 
     private Direction direction;
 	private Movement movement;
@@ -26,7 +26,7 @@ public class PlayerInput : MonoBehaviour
 
         // This grabs the gameobject within the player called playerRange,
         //  takes the script of that object in order to check whether an enemy is close or not.
-        encounter = GameObject.Find("playerRange").GetComponent<PlayerEncounterScript>();//~
+        encounter = GameObject.Find("playerRange").GetComponent<EntityEncounter>();//~
 
         // Current input affecting movement
         // May differ fron actual movement in case of obstacles, being in the air, etc

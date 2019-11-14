@@ -23,14 +23,14 @@ public class Enemy_Ninja : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isPlayerClose = (playerTrackerLeft.GetComponent<PlayerEncounterScript>().isPlayerClose || playerTrackerRight.GetComponent<PlayerEncounterScript>().isPlayerClose);
+        isPlayerClose = (playerTrackerLeft.GetComponent<EntityEncounter>().isPlayerClose || playerTrackerRight.GetComponent<EntityEncounter>().isPlayerClose);
         if (isPlayerClose)
         {
-            if (playerTrackerLeft.GetComponent<PlayerEncounterScript>().isPlayerClose)
+            if (playerTrackerLeft.GetComponent<EntityEncounter>().isPlayerClose)
             {
                 sr.flipX = true;
             }
-            else if (playerTrackerRight.GetComponent<PlayerEncounterScript>().isPlayerClose)
+            else if (playerTrackerRight.GetComponent<EntityEncounter>().isPlayerClose)
             {
                 sr.flipX = false;
             }
@@ -61,11 +61,6 @@ public class Enemy_Ninja : MonoBehaviour
     {
 		if (collision.gameObject.tag == "Player")
         {
-            //if //(collision.gameObject.GetComponent<PlayerControllerSc//ript>().isCloseAttacking)
-            //{
-            //    GetComponent<HitPoints>().SubtractHitPoints(5);
-            //}
-
             if (collision.GetComponent<HitBox>().Enabled)
             {
                 GetComponent<HitPoints>().SubtractHitPoints(5);
