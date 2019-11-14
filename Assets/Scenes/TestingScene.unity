@@ -10097,7 +10097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &746626705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14744,7 +14744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ce740bd1d504048a07ca1a1abda435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 1520630068}
+  audioSource: {fileID: 0}
 --- !u!1 &1525625069
 GameObject:
   m_ObjectHideFlags: 0
@@ -16410,7 +16410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Try again
+  m_Text: Restart
 --- !u!222 &2008208044
 CanvasRenderer:
   m_ObjectHideFlags: 0
