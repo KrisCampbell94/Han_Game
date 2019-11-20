@@ -14,8 +14,9 @@ public class PlayerInput : MonoBehaviour
     private Direction direction;
 	private Movement movement;
 
-    private bool attackTimer = false;
-    private float timer = 1; //~
+    private bool canAttack = true;
+	private float timeAttackStart = 0;
+	private float timeBetweenAttacks = 0;
 	
 	// Start is called before the first frame update
 	void Start() {
@@ -56,22 +57,10 @@ public class PlayerInput : MonoBehaviour
 			// Otherwise, normal movement
 			MovementInput(horizontalMove, verticalMove);
 			JumpInput(jumpButton);
-            if (!attackTimer)
-            {
-                AttackInput(attackButton);
-            }
-            else
-            {
-                timer += Time.deltaTime;
-                int seconds = (int)timer % 60;
-                if(seconds % 2 == 0)
-                {
-                    timer = 1;
-                    attackTimer = false;
-                }
-            }
-            
+            AttackInput(attackButton);
 		}
+
+		AttackUpdate();
 	}
 
 	private void MovementInput(float horizontalMove, float verticalMove) {
@@ -143,11 +132,22 @@ public class PlayerInput : MonoBehaviour
             }
             else
             {
-                eventManager.InvokeEvent("Attacking_Range");
-                attackTimer = true;
+				if (canAttack)
+				{
+					eventManager.InvokeEvent("Attacking_Range");
+					canAttack = false;
+					timeAttackStart = Time.timeNow;
+				}
             }
         }
     }
+
+	private void AttackUpdate() {
+		float timeSinceLastAttack = Time.timeNow - timeAttackStart;
+		if (timeSinceLastAttack >= timeBetweenAttacks) {
+			canAttack = true;
+		}
+	}
 
 	private void GravityInput(float horizontalMove, float verticalMove) {
 		// If vertical change
