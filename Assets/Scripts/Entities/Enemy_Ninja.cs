@@ -10,6 +10,7 @@ public class Enemy_Ninja : MonoBehaviour
     public Transform playerTrackerLeft;
     public Transform playerTrackerRight;
 
+    private bool jumpFlip = true;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator an;
@@ -43,6 +44,23 @@ public class Enemy_Ninja : MonoBehaviour
             if (seconds % 3 == 0)
             {
                 StartAttacking();
+                timer = 1;
+            }
+        }
+        else // Make the Ninja Jump
+        {
+            timer += Time.deltaTime;
+            int seconds = (int)timer % 60;
+            if(seconds == 5)
+            {
+                
+                if (jumpFlip)
+                    rb.velocity = new Vector2(-10f, 15f);
+                else
+                    rb.velocity = new Vector2(10f, 15f);
+                jumpFlip = !jumpFlip;
+                sr.flipX = !jumpFlip;
+
                 timer = 1;
             }
         }
