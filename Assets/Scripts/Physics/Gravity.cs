@@ -51,8 +51,6 @@ public class Gravity : MonoBehaviour
     // Flip gravity to opposite direction
     public void FlipGravity()
     {
-        Debug.Log("start " + gravityDirection);
-
         switch (gravityDirection)
         {
             case GravityDirection.North:

@@ -6,6 +6,7 @@ public class PlayerInput : MonoBehaviour
 {
 	private EventManager eventManager;
 	private Gravity gravity;
+	private GravityPoints gravityPoints;
     private EntityMover entityMover;
     private EntityRotator entityRotator;
 
@@ -22,6 +23,7 @@ public class PlayerInput : MonoBehaviour
 	void Start() {
 		eventManager = GetComponent<EventManager>();
 		gravity = GetComponent<Gravity>();
+		gravityPoints = GetComponent<GravityPoints>();
         entityMover = GetComponent<EntityMover>();
         entityRotator = GetComponent<EntityRotator>();
 
@@ -150,11 +152,17 @@ public class PlayerInput : MonoBehaviour
 	}
 
 	private void GravityInput(float horizontalMove, float verticalMove) {
+		// If not enough points
+		if (gravityPoints.gravityPoints < GravityPoints.SMALL_USE) {
+			return;
+		}
+
 		// If vertical change
 		if (verticalMove != 0) {
 			// Positive, change to north
 			if (verticalMove > 0) {
 				eventManager.InvokeEvent("Input_Gravity_Flip");
+				eventManager.InvokeEvent("GravityPoints_SmallUse");
 			}
 		}
 		// If horizontal change
@@ -162,10 +170,12 @@ public class PlayerInput : MonoBehaviour
 			// Positive, change to east
 			if (horizontalMove > 0) {
 				eventManager.InvokeEvent("Input_Gravity_RotateRight");
+				eventManager.InvokeEvent("GravityPoints_SmallUse");
 			}
 			// Negative, change to west
 			else if (horizontalMove < 0) {
 				eventManager.InvokeEvent("Input_Gravity_RotateLeft");
+				eventManager.InvokeEvent("GravityPoints_SmallUse");
 			}
 		}
 	}
