@@ -50,12 +50,12 @@ public class Enemy_Samurai : MonoBehaviour
         isPlayerClose = (playerTrackerLeft.GetComponent<EntityEncounter>().isPlayerClose || playerTrackerRight.GetComponent<EntityEncounter>().isPlayerClose);
 
         if (playerTrackerLeft.GetComponent<EntityEncounter>().isPlayerClose ||
-            playerTrackerRight.GetComponent<EntityEncounter>().closeToWall)
+            (playerTrackerRight.GetComponent<EntityEncounter>().closeToWall || playerTrackerRight.GetComponent<EntityEncounter>().isEnemyClose))
         {
             sr.flipX = true;
         }
         else if (playerTrackerRight.GetComponent<EntityEncounter>().isPlayerClose ||
-            playerTrackerLeft.GetComponent<EntityEncounter>().closeToWall)
+            (playerTrackerLeft.GetComponent<EntityEncounter>().closeToWall || playerTrackerLeft.GetComponent<EntityEncounter>().isEnemyClose))
         {
             sr.flipX = false;
         }
