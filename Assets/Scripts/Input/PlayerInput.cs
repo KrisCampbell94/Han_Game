@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour
 
     private bool canAttack = true;
 	private float timeAttackStart = 0;
-	private float timeBetweenAttacks = 0;
+	private float timeBetweenAttacks = 1;
 	
 	// Start is called before the first frame update
 	void Start() {
@@ -136,14 +136,14 @@ public class PlayerInput : MonoBehaviour
 				{
 					eventManager.InvokeEvent("Attacking_Range");
 					canAttack = false;
-					timeAttackStart = Time.timeNow;
+					timeAttackStart = Time.time;
 				}
             }
         }
     }
 
 	private void AttackUpdate() {
-		float timeSinceLastAttack = Time.timeNow - timeAttackStart;
+		float timeSinceLastAttack = Time.time - timeAttackStart;
 		if (timeSinceLastAttack >= timeBetweenAttacks) {
 			canAttack = true;
 		}
