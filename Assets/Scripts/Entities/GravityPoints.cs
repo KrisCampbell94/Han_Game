@@ -20,9 +20,15 @@ public class GravityPoints : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		eventManager = GetComponent<EventManager>();
-        eventManager.AddListener("GravityPoints_SmallUse", () => gravityPoints -= SMALL_USE);
-        eventManager.AddListener("GravityPoints_LargeUse", () => gravityPoints -= LARGE_USE);
+        eventManager = GetComponent<EventManager>();
+        eventManager.AddListener("GravityPoints_SmallUse", () => {
+            gravityPoints -= SMALL_USE;
+            replenishTimer = replenishInterval;
+        });
+        eventManager.AddListener("GravityPoints_LargeUse", () => {
+            gravityPoints -= LARGE_USE;
+            replenishTimer = replenishInterval;
+        });
 
         gravityPoints = maxGravityPoints;
     }

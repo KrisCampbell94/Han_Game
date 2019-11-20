@@ -77,11 +77,11 @@ public class MouseInput : MonoBehaviour
 				// Invoke gravity input event
 				if (diffY > 0) {
 					eventManager.InvokeEvent("Input_Gravity_South");
-					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
+					playerEventManager.InvokeEvent("GravityPoints_LargeUse");
 				} else {
 					eventManager.InvokeEvent("Input_Gravity_North");
-					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
-				}
+                    playerEventManager.InvokeEvent("GravityPoints_LargeUse");
+                }
 			}
 		} else { // X is pulled more than Y
 				 // X is pulled enough
@@ -94,11 +94,11 @@ public class MouseInput : MonoBehaviour
 				// Invoke gravity input event
 				if (diffX > 0) {
 					eventManager.InvokeEvent("Input_Gravity_West");
-					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
-				} else {
+                    playerEventManager.InvokeEvent("GravityPoints_LargeUse");
+                } else {
 					eventManager.InvokeEvent("Input_Gravity_East");
-					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
-				}
+                    playerEventManager.InvokeEvent("GravityPoints_LargeUse");
+                }
 			}
 		}
 	}
