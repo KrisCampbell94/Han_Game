@@ -15,7 +15,7 @@ public class GravityPoints : MonoBehaviour
 
     public int gravityPoints { get; private set; }
 
-    private float timeAtLastReplenish = float.MaxValue;
+    private float timeAtLastReplenish = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +30,9 @@ public class GravityPoints : MonoBehaviour
     void FixedUpdate()
     {
         float timeSinceLastReplenish = Time.time - timeAtLastReplenish;
-        if (timeSinceLastReplenish >= replenishInterval) {
+        if (timeSinceLastReplenish >= replenishInterval && gravityPoints <= maxGravityPoints) {
             gravityPoints += replenishAmount;
             timeAtLastReplenish = Time.time;
         }
-        Debug.Log(timeSinceLastReplenish + " " + timeAtLastReplenish);
     }
 }
