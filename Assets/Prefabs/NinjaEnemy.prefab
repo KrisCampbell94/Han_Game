@@ -72,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerClose: 0
   isEnemyClose: 0
+  closeToWall: 0
 --- !u!1 &616396445621966054
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,6 +86,12 @@ GameObject:
   - component: {fileID: 616396445621966049}
   - component: {fileID: 616396445621966053}
   - component: {fileID: 616396445621966052}
+  - component: {fileID: 2625449785219554183}
+  - component: {fileID: 6313288204017082214}
+  - component: {fileID: 4021462025559971748}
+  - component: {fileID: 5198568972984846315}
+  - component: {fileID: 4143379676759798962}
+  - component: {fileID: 1950516705953488045}
   m_Layer: 0
   m_Name: NinjaEnemy
   m_TagString: Enemy
@@ -189,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 0
   maxHitPoints: 5
+  pointsOnKill: 20
 --- !u!61 &616396445621966052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -215,6 +223,97 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9375, y: 3.4375}
   m_EdgeRadius: 0
+--- !u!114 &2625449785219554183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616396445621966054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3eee3fd70f9164a8bd84eef8dcb63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 1
+--- !u!114 &6313288204017082214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616396445621966054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ea4e6c569cf924e9a25e5b16f56c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragThreshold: 100
+--- !u!114 &4021462025559971748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616396445621966054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe5d964d335e5b40926f0e80fd6a040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityMagnitude: 9.8
+  autoFixRigidbody: 1
+--- !u!114 &5198568972984846315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616396445621966054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b4f15b9ad75c7439da6685379d3a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 6
+  runningMultiplier: 2
+  jumpForce: 8
+  quickFallForce: -0.5
+  attackLocation: {fileID: 0}
+--- !u!114 &4143379676759798962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616396445621966054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72384ed0bd8a58143b2dd62e50c651f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRotate: 0.5
+--- !u!50 &1950516705953488045
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616396445621966054}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &616396446009424014
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerClose: 0
   isEnemyClose: 0
+  closeToWall: 0
 --- !u!1 &616396446928214426
 GameObject:
   m_ObjectHideFlags: 0

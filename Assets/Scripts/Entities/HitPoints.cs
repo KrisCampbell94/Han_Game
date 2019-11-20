@@ -7,6 +7,7 @@ public class HitPoints : MonoBehaviour
 {
     public int hitPoints;
 	public int maxHitPoints = 10;
+    public int pointsOnKill = 20;
 	private SpriteRenderer sr;
     // Start is called before the first frame update
     void Start()
@@ -47,8 +48,11 @@ public class HitPoints : MonoBehaviour
 		if(hitPoints < 1){
 			if (tag=="Player") {
 				SceneManager.LoadScene("Lose");
-			} else {
-				gameObject.SetActive(false);
+			} else
+            {
+                Debug.Log("ADDING SCORE");
+                ScoreManager.sharedInstance.AddToScore(pointsOnKill);
+                gameObject.SetActive(false);
 			}
 		}
     }

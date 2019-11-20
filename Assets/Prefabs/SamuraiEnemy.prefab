@@ -351,6 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 0
   maxHitPoints: 10
+  pointsOnKill: 50
 --- !u!114 &1796576251446891312
 MonoBehaviour:
   m_ObjectHideFlags: 0

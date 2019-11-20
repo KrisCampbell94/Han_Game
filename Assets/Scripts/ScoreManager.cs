@@ -5,11 +5,8 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-	public enum ScoreType { Time }
-
-	public ScoreType scoreType = ScoreType.Time;
 	public int scorePerSecond = 1;
-	public int maxScore = 60 * 10;
+	public int maxScoreFromTime = 60 * 10;
 
 	public Text scoreText;
 	public Text timeText;
@@ -19,10 +16,27 @@ public class ScoreManager : MonoBehaviour
 
 	private bool trackTime;
 	private float timeStart;
+    private float timeAtLastDecrement;
 
-	// Start is called before the first frame update
-	void Start() {
+    public static ScoreManager sharedInstance;
+
+    private void Awake()
+    {
+        if(sharedInstance == null)
+        {
+            sharedInstance = this;
+            Debug.Log("Shared Instance");
+        }
+        else
+        {
+            Debug.LogError("Multiple Score Managers Found. Kill Kill Kill. Die Die Die.");
+        }
+    }
+
+    // Start is called before the first frame update
+    void Start() {
 		StartTime();
+        score = maxScoreFromTime;
 	}
 
 	// Update is called once per frame
@@ -41,17 +55,30 @@ public class ScoreManager : MonoBehaviour
 		float timeNow = Time.time;
 		timeSinceStart = timeNow - timeStart;
 
-		score = maxScore - Mathf.RoundToInt(timeSinceStart * scorePerSecond);
-		if (score <= 0) {
-			score = 0;
-		}
+        float timeSinceLastDecrement = Time.time - timeAtLastDecrement;
+        if (timeSinceLastDecrement >= 1)
+        {
+            score -= scorePerSecond;
+            if (score <= 0)
+            {
+                score = 0;
+            }
+            timeAtLastDecrement = Time.time;
+        }
+
+        //score = maxScore - Mathf.RoundToInt(timeSinceStart * scorePerSecond);
 
 		// TODO: Use events instead
 		scoreText.text = score.ToString();
-		timeText.text = Mathf.RoundToInt(timeSinceStart).ToString();
+		timeText.text = Mathf.FloorToInt(timeSinceStart).ToString();
 	}
 
 	public void StopTime() {
 		trackTime = false;
 	}
+
+    public void AddToScore(int scoreToAdd)
+    {
+        score += scoreToAdd;
+    }
 }
