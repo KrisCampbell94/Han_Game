@@ -12,12 +12,14 @@ public class Enemy_Ninja : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator an;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        an = GetComponent<Animator>();
     }
 
     // Update is called once per frame
