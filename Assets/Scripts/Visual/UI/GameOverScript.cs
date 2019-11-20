@@ -7,6 +7,6 @@ public class GameOverScript : MonoBehaviour
 {
     public void TryAgain()
     {
-        SceneManager.LoadScene("TestingScene");
+        SceneManager.LoadScene("Level1");
     }
 }
