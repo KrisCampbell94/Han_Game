@@ -10,7 +10,9 @@ public class MouseInput : MonoBehaviour
 
 	// Player object
 	private GameObject player;
+	private EventManager playerEventManager;
 	private Gravity playerGravity;
+	private GravityPoints playerGravityPoints;
 
 	// Self components
 	private EventManager eventManager;
@@ -22,7 +24,9 @@ public class MouseInput : MonoBehaviour
 	// Start is called before the first frame update
 	void Start() {
 		player = GameObject.FindWithTag("Player");
+		playerEventManager = player.GetComponent<EventManager>();
 		playerGravity = player.GetComponent<Gravity>();
+		playerGravityPoints = player.GetComponent<GravityPoints>();
 
 		eventManager = GetComponent<EventManager>();
 	}
@@ -34,6 +38,11 @@ public class MouseInput : MonoBehaviour
 	}
 
 	private void OnMouseUp() {
+		// If not enough points
+		if (playerGravityPoints.gravityPoints < GravityPoints.SMALL_USE) {
+			return;
+		}
+
 		// Get pos on mouse up
 		float mouseUpX = Input.mousePosition.x;
 		float mouseUpY = Input.mousePosition.y;
@@ -68,8 +77,10 @@ public class MouseInput : MonoBehaviour
 				// Invoke gravity input event
 				if (diffY > 0) {
 					eventManager.InvokeEvent("Input_Gravity_South");
+					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
 				} else {
 					eventManager.InvokeEvent("Input_Gravity_North");
+					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
 				}
 			}
 		} else { // X is pulled more than Y
@@ -83,8 +94,10 @@ public class MouseInput : MonoBehaviour
 				// Invoke gravity input event
 				if (diffX > 0) {
 					eventManager.InvokeEvent("Input_Gravity_West");
+					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
 				} else {
 					eventManager.InvokeEvent("Input_Gravity_East");
+					playerEventManager.InvokeEvent("GravityPoints_SmallUse");
 				}
 			}
 		}
