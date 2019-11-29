@@ -7,20 +7,38 @@ public class NinjaStar : MonoBehaviour
     public float speed;
     public bool FlipX = false;
     private SpriteRenderer sprite;
-    
+
+    private GameObject getPlayer;
+    private Vector2 playerPosition, moveToPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
+        getPlayer = GameObject.Find("Han_Player");
         sprite = GetComponent<SpriteRenderer>();
+        playerPosition = getPlayer.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         sprite.flipX = FlipX;
-        Movement();
+        FollowMovement();
     }
-    private void Movement()
+    public void FollowingSetup()
+    {
+        Vector3 directionToPlayer = (Vector2)transform.position - playerPosition;
+        moveToPlayer = directionToPlayer;
+        float angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
+        GetComponent<Rigidbody2D>().rotation = angle;
+        Debug.Log(directionToPlayer);
+    }
+    private void FollowMovement()
+    {
+        Vector2 speedDelta = moveToPlayer * speed * Time.deltaTime;
+        transform.position = new Vector2(transform.position.x, transform.position.y) - speedDelta;
+    }
+    private void StraightMovement()
     {
         float speedDelta = speed * Time.deltaTime;
         switch (sprite.flipX)

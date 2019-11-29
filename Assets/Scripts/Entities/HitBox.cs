@@ -40,4 +40,14 @@ public class HitBox : MonoBehaviour
     {
         Enabled = true;
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (gameObject.name == "groundCheck")
+        {
+            if(collision.gameObject.tag == "Enemy")
+            {
+                collision.gameObject.GetComponent<HitPoints>().SubtractHitPoints(5);
+            }
+        }
+    }
 }

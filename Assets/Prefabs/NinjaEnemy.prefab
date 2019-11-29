@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 616396444957963929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 3.538505, z: 1}
   m_Children: []
   m_Father: {fileID: 616396445621966051}
   m_RootOrder: 1
@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5198568972984846315}
   - component: {fileID: 4143379676759798962}
   - component: {fileID: 1950516705953488045}
+  - component: {fileID: 1664857038}
   m_Layer: 0
   m_Name: NinjaEnemy
   m_TagString: Enemy
@@ -157,7 +158,7 @@ SpriteRenderer:
   m_Sprite: {fileID: -7691280829030766128, guid: d4409b27d855e704982f08b1d81c1046,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.9375, y: 3.4375}
@@ -243,7 +244,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616396445621966054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8ea4e6c569cf924e9a25e5b16f56c24, type: 3}
   m_Name: 
@@ -270,7 +271,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616396445621966054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80b4f15b9ad75c7439da6685379d3a06, type: 3}
   m_Name: 
@@ -287,7 +288,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616396445621966054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72384ed0bd8a58143b2dd62e50c651f4, type: 3}
   m_Name: 
@@ -314,6 +315,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1664857038
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616396445621966054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51d0e1a67cb3ec54cac034a929a30d48, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &616396446009424014
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 616396446009424014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 3.538505, z: 1}
   m_Children: []
   m_Father: {fileID: 616396445621966051}
   m_RootOrder: 2
