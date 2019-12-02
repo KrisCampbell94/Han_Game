@@ -14,7 +14,7 @@ public class KunaiPooler : MonoBehaviour
         pooledKunais = new List<GameObject>();
         for (int i = 0; i < amountToPool; i++)
         {
-            GameObject obj = (GameObject)Instantiate(kunaisToPool);
+            GameObject obj = Instantiate(kunaisToPool);
             obj.SetActive(false);
             pooledKunais.Add(obj);
         }

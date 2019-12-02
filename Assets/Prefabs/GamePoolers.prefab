@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5411589822746678174}
   - component: {fileID: 5411589822746678175}
   - component: {fileID: 5411589822746678168}
+  - component: {fileID: 5411589822757180133}
   m_Layer: 0
   m_Name: GamePoolers
   m_TagString: Untagged
@@ -64,3 +65,19 @@ MonoBehaviour:
   ninjaStarToPool: {fileID: 6278910510363433388, guid: 650f34407d91f3d48b709bf44a7f4fb4,
     type: 3}
   amountToPool: 5
+--- !u!114 &5411589822757180133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411589822746678169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc05a7fe27af094780548371b14bc3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledBulletFire: []
+  bulletFireToPool: {fileID: 4576476517960739242, guid: 2997230d0e546ed4ebd3c0d77f1bfe90,
+    type: 3}
+  amountToPool: 10
