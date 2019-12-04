@@ -73,8 +73,11 @@ public class Enemy_Ninja : MonoBehaviour
         {
             NinjaStar weaponScript = weapon.GetComponent<NinjaStar>();
             weaponScript.FlipX = sr.flipX;
+            
             weapon.transform.position = attackLocation.transform.position;
+            weaponScript.FollowingSetup();
             weapon.SetActive(true);
+            
         }
     }
     void OnTriggerEnter2D(Collider2D collision)

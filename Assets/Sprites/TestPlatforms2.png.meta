@@ -1,0 +1,2419 @@
+fileFormatVersion: 2
+guid: 2db1f97135f77d8468c942b506987a09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -230279868957904395
+    second: TestPlatforms2_0
+  - first:
+      213: -539283988657849444
+    second: TestPlatforms2_1
+  - first:
+      213: -2302109747028786788
+    second: TestPlatforms2_2
+  - first:
+      213: 6017918589772714661
+    second: TestPlatforms2_3
+  - first:
+      213: -443683186381111531
+    second: TestPlatforms2_4
+  - first:
+      213: -7611463623450900572
+    second: TestPlatforms2_5
+  - first:
+      213: -9023709012067509796
+    second: TestPlatforms2_6
+  - first:
+      213: 5547648815569289415
+    second: TestPlatforms2_7
+  - first:
+      213: 8120827654092287760
+    second: TestPlatforms2_8
+  - first:
+      213: -3902103966809071276
+    second: TestPlatforms2_9
+  - first:
+      213: -8607784365132147414
+    second: TestPlatforms2_10
+  - first:
+      213: 1497116838888382892
+    second: TestPlatforms2_11
+  - first:
+      213: -763597325852196265
+    second: TestPlatforms2_12
+  - first:
+      213: -4483731795290346365
+    second: TestPlatforms2_13
+  - first:
+      213: 6372202217057417687
+    second: TestPlatforms2_14
+  - first:
+      213: 3483360165910857486
+    second: TestPlatforms2_15
+  - first:
+      213: 7480599363382520042
+    second: TestPlatforms2_16
+  - first:
+      213: -1880930030946370169
+    second: TestPlatforms2_17
+  - first:
+      213: -4575370886224326007
+    second: TestPlatforms2_18
+  - first:
+      213: 1727467418639946485
+    second: TestPlatforms2_19
+  - first:
+      213: -8424672505922816047
+    second: TestPlatforms2_20
+  - first:
+      213: 1222424465957559138
+    second: TestPlatforms2_21
+  - first:
+      213: 1756967909628076653
+    second: TestPlatforms2_22
+  - first:
+      213: 1079574378258660548
+    second: TestPlatforms2_23
+  - first:
+      213: 3443084254000379217
+    second: TestPlatforms2_24
+  - first:
+      213: 7836619894243213801
+    second: TestPlatforms2_25
+  - first:
+      213: 7125973287067386645
+    second: TestPlatforms2_26
+  - first:
+      213: 5413581686323237766
+    second: TestPlatforms2_27
+  - first:
+      213: -9004325794031010221
+    second: TestPlatforms2_28
+  - first:
+      213: 7344087749978169650
+    second: TestPlatforms2_29
+  - first:
+      213: 2498819427017054064
+    second: TestPlatforms2_30
+  - first:
+      213: 8935662393895505856
+    second: TestPlatforms2_31
+  - first:
+      213: 2609579894633746911
+    second: TestPlatforms2_32
+  - first:
+      213: 8558055503463422493
+    second: TestPlatforms2_33
+  - first:
+      213: 7860007162010900986
+    second: TestPlatforms2_34
+  - first:
+      213: 9096546749175825991
+    second: TestPlatforms2_35
+  - first:
+      213: -8020848987008689612
+    second: TestPlatforms2_36
+  - first:
+      213: -3965793816055027129
+    second: TestPlatforms2_37
+  - first:
+      213: 8067518512265813275
+    second: TestPlatforms2_38
+  - first:
+      213: -1935521339240898875
+    second: TestPlatforms2_39
+  - first:
+      213: 5839827627519728105
+    second: TestPlatforms2_40
+  - first:
+      213: 4035511770651669100
+    second: TestPlatforms2_41
+  - first:
+      213: -4600210676467612436
+    second: TestPlatforms2_42
+  - first:
+      213: -1043393005490127830
+    second: TestPlatforms2_43
+  - first:
+      213: 5107642850893841469
+    second: TestPlatforms2_44
+  - first:
+      213: 3382017644415124672
+    second: TestPlatforms2_45
+  - first:
+      213: 3872504757288555683
+    second: TestPlatforms2_46
+  - first:
+      213: -7369082146952285085
+    second: TestPlatforms2_47
+  - first:
+      213: -7828972281549833841
+    second: TestPlatforms2_48
+  - first:
+      213: -248722860312378493
+    second: TestPlatforms2_49
+  - first:
+      213: 1708996147078951053
+    second: TestPlatforms2_50
+  - first:
+      213: -3533006701657436980
+    second: TestPlatforms2_51
+  - first:
+      213: 2616139147419623418
+    second: TestPlatforms2_52
+  - first:
+      213: -8584432598556776054
+    second: TestPlatforms2_53
+  - first:
+      213: -4635319387448338576
+    second: TestPlatforms2_54
+  - first:
+      213: -4816478547180149795
+    second: TestPlatforms2_55
+  - first:
+      213: -3141607292497766254
+    second: TestPlatforms2_56
+  - first:
+      213: 873268196820736352
+    second: TestPlatforms2_57
+  - first:
+      213: 6506711662112984396
+    second: TestPlatforms2_58
+  - first:
+      213: -836166544952683052
+    second: TestPlatforms2_59
+  - first:
+      213: -3633843165897453207
+    second: TestPlatforms2_60
+  - first:
+      213: -600089188755429962
+    second: TestPlatforms2_61
+  - first:
+      213: 8660845203222169033
+    second: TestPlatforms2_62
+  - first:
+      213: 2135308027846872049
+    second: TestPlatforms2_63
+  - first:
+      213: 1410393331723283844
+    second: TestPlatforms2_64
+  - first:
+      213: -3536811570286680646
+    second: TestPlatforms2_65
+  - first:
+      213: -9087897038307647140
+    second: TestPlatforms2_66
+  - first:
+      213: -1516288130960966101
+    second: TestPlatforms2_67
+  - first:
+      213: -3241091045923389414
+    second: TestPlatforms2_68
+  - first:
+      213: 6369965066278186111
+    second: TestPlatforms2_69
+  - first:
+      213: -2897026312072417939
+    second: TestPlatforms2_70
+  - first:
+      213: 3635217539149473162
+    second: TestPlatforms2_71
+  - first:
+      213: -4260524626635767222
+    second: TestPlatforms2_72
+  - first:
+      213: 3466527953167401953
+    second: TestPlatforms2_73
+  - first:
+      213: 7499798053189977509
+    second: TestPlatforms2_74
+  - first:
+      213: -3180950698779426406
+    second: TestPlatforms2_75
+  - first:
+      213: 6192607648171155631
+    second: TestPlatforms2_76
+  - first:
+      213: 6040936192525439672
+    second: TestPlatforms2_77
+  - first:
+      213: 1402929418576942566
+    second: TestPlatforms2_78
+  - first:
+      213: -7738967880210751793
+    second: TestPlatforms2_79
+  - first:
+      213: 7149086040586906039
+    second: TestPlatforms2_80
+  - first:
+      213: -681716646296837263
+    second: TestPlatforms2_81
+  - first:
+      213: -8360014336782374785
+    second: TestPlatforms2_82
+  - first:
+      213: -8555195355422154901
+    second: TestPlatforms2_83
+  - first:
+      213: 1327882657309607576
+    second: TestPlatforms2_84
+  - first:
+      213: 1135647438965076986
+    second: TestPlatforms2_85
+  - first:
+      213: 4839460197792859503
+    second: TestPlatforms2_86
+  - first:
+      213: 1794169652465853442
+    second: TestPlatforms2_87
+  - first:
+      213: -2697548700012235001
+    second: TestPlatforms2_88
+  - first:
+      213: 4576566749500635318
+    second: TestPlatforms2_89
+  - first:
+      213: -8111884338536459677
+    second: TestPlatforms2_90
+  - first:
+      213: 23218499822752558
+    second: TestPlatforms2_91
+  - first:
+      213: -126706648964260552
+    second: TestPlatforms2_92
+  - first:
+      213: 4375624752294600544
+    second: TestPlatforms2_93
+  - first:
+      213: 6230889131928888951
+    second: TestPlatforms2_94
+  - first:
+      213: -8000489814319606792
+    second: TestPlatforms2_95
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TestPlatforms2_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce8339dd5db08648996408a089fb6a0
+      internalID: -230279868957904395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e5d8732dfeec9489d8519ed5f40610
+      internalID: -539283988657849444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d51c3c2bf8ee6646921168c86562c26
+      internalID: -2302109747028786788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 283
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0ee84ffca2b97448946d7fba7c1641
+      internalID: 6017918589772714661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 283
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dd8f14cba3712439c2a819fcd335ac
+      internalID: -443683186381111531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 283
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac949ddfd6bb2f34baed2cb9e73de092
+      internalID: -7611463623450900572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3864f8bafef48a47b57f04ad4b61651
+      internalID: -9023709012067509796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c62c6742538b664ca1262e30b92e60e
+      internalID: 5547648815569289415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_8
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14754e98e830eb4419b4bfe481afbdb2
+      internalID: 8120827654092287760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed55bb127d67b4e4f9ca777df743791d
+      internalID: -3902103966809071276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4feace6be5ad9ff4fbd6a8b1607fb07c
+      internalID: -8607784365132147414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edfe2638a910f74b99e727711dc5e58
+      internalID: 1497116838888382892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_12
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15654082b9ed4342b9c61be2131c2fe
+      internalID: -763597325852196265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_13
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71eb5befb2b6e044a34a6c2dcffb62c
+      internalID: -4483731795290346365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_14
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 299
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72e5968039f38940a92fbf2cba19752
+      internalID: 6372202217057417687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_15
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b54ea62372550046a748b28c62c6e7b
+      internalID: 3483360165910857486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_16
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39d22702499f694d86e325e281f704c
+      internalID: 7480599363382520042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_17
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c4bdb75f8f16b4caf6dd13d26a1eaf
+      internalID: -1880930030946370169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_18
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056ec6d52b779f54b8bb810209da1d9b
+      internalID: -4575370886224326007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_19
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18890fdf36e988a46b478d7dd05ef439
+      internalID: 1727467418639946485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_20
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 211
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e86149ce5786444aec2c1883c3ba3d
+      internalID: -8424672505922816047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_21
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333288c56304ca04695f2e01b76e2c49
+      internalID: 1222424465957559138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_22
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cbade00f201d045ba9c3508a2ac88a
+      internalID: 1756967909628076653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_23
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6510d6abc24878488e7bdf64913cc52
+      internalID: 1079574378258660548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_24
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb45423183953a84b9f7d0f3344a1dd6
+      internalID: 3443084254000379217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_25
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ef7e65786864347a022f6d5ca5f29b
+      internalID: 7836619894243213801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_26
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7dce2627f8ad44b926fa130c7f546e
+      internalID: 7125973287067386645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_27
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e259c7ec1f5cd7f419924dc3a64cb5ca
+      internalID: 5413581686323237766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_28
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b3d89ab3abdfc4d9b274fa83c06b2f
+      internalID: -9004325794031010221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_29
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 247
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06001e0730e19fe4cb478aa89ac3e9de
+      internalID: 7344087749978169650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b1b330ae80d5d45a03707fbbb55eb2
+      internalID: 2498819427017054064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_31
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c77e485f99972f46b79e76a3ca13f6a
+      internalID: 8935662393895505856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_32
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 197
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce0db17f7ccf3d479549a26cff32b5b
+      internalID: 2609579894633746911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_33
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 139
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dff5fb0b4e5f144b46584be266aa13
+      internalID: 8558055503463422493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_34
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 139
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174d92de995e0594bbd47d3652ae5984
+      internalID: 7860007162010900986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_35
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 139
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4c070aae1e4e04da248c962cc492a4
+      internalID: 9096546749175825991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_36
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0922a750b0962548b116aa650d7d11d
+      internalID: -8020848987008689612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_37
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f7a92881fde364f8327f70193958b9
+      internalID: -3965793816055027129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_38
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0811ded7442c76847bfececf71d7f86d
+      internalID: 8067518512265813275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_39
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73db842ed56948b4e8cfbca16c8a5586
+      internalID: -1935521339240898875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_40
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31491646b995e35488533413fe6a1e1c
+      internalID: 5839827627519728105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_41
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7de70b0afe96b4989337944da50a88
+      internalID: 4035511770651669100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_42
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6e1441d4ece5343a606402e17258d5
+      internalID: -4600210676467612436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_43
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c636e668233f834ab489da19c2b693b
+      internalID: -1043393005490127830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_44
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 196
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb77256101714449baae2deaabec95b
+      internalID: 5107642850893841469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_45
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b291ac1aebc01948bbb6e27c62ea039
+      internalID: 3382017644415124672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_46
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f6efeadb2f2e74eaff03f85589369e
+      internalID: 3872504757288555683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_47
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3022ec45782a34689d0cf813b2a8fb
+      internalID: -7369082146952285085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_48
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fba3d295f96f140bedaad7a21518ce
+      internalID: -7828972281549833841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_49
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c394f796ccd357a4f84d6841c39bf616
+      internalID: -248722860312378493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_50
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3818bd1897ac404ba5b5927deca746b
+      internalID: 1708996147078951053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_51
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1f126eb03d66946acb17c9a955b0d6
+      internalID: -3533006701657436980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_52
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e3e6ab02e1ca042ae67ba0250e2dea
+      internalID: 2616139147419623418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_53
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbec6a6c9cace704e875627aa206ba68
+      internalID: -8584432598556776054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_54
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327ef62bcf4b88a47b40db8f88222a79
+      internalID: -4635319387448338576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_55
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff3e0ff89576614b8839a4294b5fb3e
+      internalID: -4816478547180149795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_56
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ae38bad3a197c4eba2f0edebbe4795
+      internalID: -3141607292497766254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_57
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 151
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1764b0a5f81d54a94ba3e270494042
+      internalID: 873268196820736352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_58
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 151
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1294da9f83246b0468510755814430e8
+      internalID: 6506711662112984396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_59
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 151
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560b2d67b5b1a3d4189a00728d34ce4c
+      internalID: -836166544952683052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_60
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60be6211b41c714892e8a7631a1b76b
+      internalID: -3633843165897453207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_61
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa70daa36304d6040b6cfcdd7f493cb2
+      internalID: -600089188755429962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_62
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646224794224f1f4480bb933bc539f55
+      internalID: 8660845203222169033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_63
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740016e954e674d4e93375033028aaf4
+      internalID: 2135308027846872049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_64
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b02ff82b8a5e943bd6a94af8e9dd36
+      internalID: 1410393331723283844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_65
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf6067fe0eee524da9f680cd37460ef
+      internalID: -3536811570286680646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_66
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5791c06d6c59da24892f14c4f5006321
+      internalID: -9087897038307647140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_67
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935f575fe17d5f3449cf2e8ab2d1a1b5
+      internalID: -1516288130960966101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_68
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817946c690b6bec42941c58deb06ef10
+      internalID: -3241091045923389414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_69
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64db9557b2a34c940a89ba31fb63014d
+      internalID: 6369965066278186111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_70
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d24f35610d2870408c14cc8c98e3e18
+      internalID: -2897026312072417939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_71
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ac9f8f5494dd04ea00aeb76fd7e344
+      internalID: 3635217539149473162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_72
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113f697cfef47c64cac784f5484380b9
+      internalID: -4260524626635767222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_73
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328a6707963604d4c8a884155980603d
+      internalID: 3466527953167401953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_74
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 92
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926522b16e047774a8939d496b573d90
+      internalID: 7499798053189977509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_75
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 68
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b751b2a93ddada647b03f343cd09e791
+      internalID: -3180950698779426406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_76
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 68
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8738ba3eb88bea24e9adaf04a7ca9adb
+      internalID: 6192607648171155631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_77
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 69
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f29d2606221154ab9e5989ee963714
+      internalID: 6040936192525439672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_78
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028b2adfb85d0e445a14ed369cea494f
+      internalID: 1402929418576942566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_79
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe9d6e3429bc4d4783e68c226b7b007
+      internalID: -7738967880210751793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_80
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ee117685841344894f91e2fcd27298
+      internalID: 7149086040586906039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_81
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefb717378827fb44b2fcd9ec56ffcb4
+      internalID: -681716646296837263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_82
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054b0d5197c02fd409ef8c7c4b3db69d
+      internalID: -8360014336782374785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_83
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df2e0ce0feb7aa4989574c466989993
+      internalID: -8555195355422154901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_84
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ac4837fa0990146aec0bb2324af536
+      internalID: 1327882657309607576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_85
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138e0c72b5d740446a7c078d35d28175
+      internalID: 1135647438965076986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_86
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f1d5729bb6905449f5134e30c04210
+      internalID: 4839460197792859503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_87
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d96e07ad80da6f45abb107d33614927
+      internalID: 1794169652465853442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_88
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2961ee538132761409e7b7939b431d98
+      internalID: -2697548700012235001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_89
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace3beb5e6d3d0e438a1b63c9307902a
+      internalID: 4576566749500635318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_90
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311bb3eb9a5771142ab72fada696cfd9
+      internalID: -8111884338536459677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_91
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae40b5323055754595ec4a9903d4e71
+      internalID: 23218499822752558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_92
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 41
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cbf91cc3ec1b9458d54d5d72c72245
+      internalID: -126706648964260552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_93
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c43cc9450c2f14e861592a3ddec5de
+      internalID: 4375624752294600544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_94
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8254c26c368c4cb4897d7ed826af79c7
+      internalID: 6230889131928888951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestPlatforms2_95
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e125bc611e3ffc469380cc8add45ad3
+      internalID: -8000489814319606792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
