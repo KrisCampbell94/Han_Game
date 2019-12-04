@@ -16,14 +16,19 @@ public class NinjaStar : MonoBehaviour
     {
         getPlayer = GameObject.Find("Han_Player");
         sprite = GetComponent<SpriteRenderer>();
-        playerPosition = getPlayer.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        SetPlayerPosition();
         sprite.flipX = FlipX;
         FollowMovement();
+    }
+    public void SetPlayerPosition()
+    {
+        playerPosition = getPlayer.transform.position;
+        Debug.Log(playerPosition);
     }
     public void FollowingSetup()
     {
@@ -31,7 +36,6 @@ public class NinjaStar : MonoBehaviour
         moveToPlayer = directionToPlayer;
         float angle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
         GetComponent<Rigidbody2D>().rotation = angle;
-        Debug.Log(directionToPlayer);
     }
     private void FollowMovement()
     {

@@ -39,10 +39,8 @@ public class GravityPoints : MonoBehaviour
 
     void FixedUpdate()
     {
-        //if(previousPoints != gravityPoints)
-        //{
-            FlameSizeUpdate();
-        //}
+        FlamePosition();
+        FlameSizeUpdate();
         
         if (replenishTimer <= 0 && gravityPoints < maxGravityPoints) {
             gravityPoints += replenishAmount;
@@ -53,12 +51,24 @@ public class GravityPoints : MonoBehaviour
         replenishTimer -= Time.fixedDeltaTime;
         previousPoints = gravityPoints;
     }
-
+    void FlamePosition()
+    {
+        eventManager.AddListener("Input_TurnLeft", () => {
+            gravityFlame.transform.localPosition = new Vector2(1, 2.49f);
+        });
+        eventManager.AddListener("Input_TurnRight", () => {
+            gravityFlame.transform.localPosition = new Vector2(-1, 2.49f);
+        });
+    }
     void FlameSizeUpdate()
     {
         Vector3 newScale = new Vector3(0, 0),
             currentScale = gravityFlame.transform.localScale;
         SpriteRenderer flameRender = gravityFlame.GetComponent<SpriteRenderer>();
+
+        ParticleSystem.MainModule particle = gravityFlame.transform.Find("Particle System").GetComponent<ParticleSystem>().main;
+        ParticleSystem.EmissionModule particleEmission = gravityFlame.transform.Find("Particle System").GetComponent<ParticleSystem>().emission;
+
         float alpha = 1.0f;
         if(gravityPoints == maxGravityPoints)
         {
@@ -68,6 +78,7 @@ public class GravityPoints : MonoBehaviour
         {
             newScale = new Vector3(0.45f, 0.9f);
             alpha = 0.9f;
+            
         }
         else if (gravityPoints < (maxGravityPoints * 0.9f) && gravityPoints >= (maxGravityPoints * 0.8f))
         {
@@ -114,6 +125,10 @@ public class GravityPoints : MonoBehaviour
             newScale = new Vector3(0, 0);
             alpha = 0.0f;
         }
+        // Particle System Edits
+        particle.startSize = (0.55f * alpha);
+        particleEmission.rateOverTime = new ParticleSystem.MinMaxCurve(20 * alpha);
+
         Debug.Log(gravityPoints);
         gravityFlame.transform.localScale = Vector3.Lerp(currentScale, newScale,1 * Time.deltaTime);
         flameRender.color = new Color(flameRender.color.r, flameRender.color.g, flameRender.color.b, alpha);
