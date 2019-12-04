@@ -303,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 0
   maxHitPoints: 15
-  pointsOnKill: 30
+  pointsOnKill: 100
 --- !u!50 &7272180851173017980
 Rigidbody2D:
   serializedVersion: 4

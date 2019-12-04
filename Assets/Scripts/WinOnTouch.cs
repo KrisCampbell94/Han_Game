@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WinOnTouch : MonoBehaviour
 {
+    public string SceneToLoad;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class WinOnTouch : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.gameObject.tag == "Player") {
-			SceneManager.LoadScene("Win");
+			SceneManager.LoadScene(SceneToLoad);
 		}
 	}
 }

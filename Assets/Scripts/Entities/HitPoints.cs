@@ -47,7 +47,9 @@ public class HitPoints : MonoBehaviour
 		
 		if(hitPoints < 1){
 			if (tag=="Player") {
-				SceneManager.LoadScene("Lose");
+                GameOverScript.SceneToLoad = SceneManager.GetActiveScene().name;
+
+                SceneManager.LoadScene("Lose");
 			} else
             {
                 Debug.Log("ADDING SCORE");

@@ -20,7 +20,7 @@ public class Enemy_BatNinja : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        getPlayer = GameObject.Find("Han_Player");
+        getPlayer = GameObject.Find("Player_Han");
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         an = GetComponent<Animator>();

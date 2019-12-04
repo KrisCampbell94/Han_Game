@@ -14,7 +14,7 @@ public class NinjaStar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        getPlayer = GameObject.Find("Han_Player");
+        getPlayer = GameObject.Find("Player_Han");
         sprite = GetComponent<SpriteRenderer>();
     }
 
