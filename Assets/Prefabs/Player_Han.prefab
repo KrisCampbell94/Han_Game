@@ -5246,8 +5246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityFlame: {fileID: 1563109516557406316}
-  maxGravityPoints: 10
-  replenishInterval: 3
+  maxGravityPoints: 4
+  replenishInterval: 1
   replenishAmount: 1
 --- !u!114 &4721758065756463016
 MonoBehaviour:
