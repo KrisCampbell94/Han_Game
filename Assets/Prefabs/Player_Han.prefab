@@ -5176,9 +5176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b4f15b9ad75c7439da6685379d3a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 6
+  movementSpeed: 20
   runningMultiplier: 2
-  jumpForce: 8
+  jumpForce: 12
   quickFallForce: -0.5
   attackLocation: {fileID: 4721758065553753511}
 --- !u!114 &4721758065756463025
@@ -5247,8 +5247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravityFlame: {fileID: 1563109516557406316}
   maxGravityPoints: 4
-  replenishInterval: 1
-  replenishAmount: 1
+  replenishInterval: 0.5
+  replenishAmount: 0.5
 --- !u!114 &4721758065756463016
 MonoBehaviour:
   m_ObjectHideFlags: 0

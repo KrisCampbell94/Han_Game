@@ -8,16 +8,16 @@ public class GravityPoints : MonoBehaviour
 
     public GameObject gravityFlame;
 
-    public static readonly int SMALL_USE = 1;
-    public static readonly int LARGE_USE = 2;
+    public static readonly int SMALL_USE = 2;
+    public static readonly int LARGE_USE = 4;
 
-	public int maxGravityPoints = 10;
-    public int replenishInterval = 3; // Increase points ever x seconds 
-    public int replenishAmount = 1; // Increase x points every interval
+	public float maxGravityPoints = 4;
+    public float replenishInterval = 0.5f; // Increase points ever x seconds 
+    public float replenishAmount = 0.5f; // Increase x points every interval
 
-    public int gravityPoints { get; private set; }
+    public float gravityPoints { get; private set; }
 
-    private int previousPoints;
+    private float previousPoints;
 
     private float replenishTimer = 0;
 
