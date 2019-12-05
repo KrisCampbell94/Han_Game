@@ -28,7 +28,7 @@ public class NinjaStar : MonoBehaviour
     public void SetPlayerPosition()
     {
         playerPosition = getPlayer.transform.position;
-        Debug.Log(playerPosition);
+        // Debug.Log(playerPosition);
     }
     public void FollowingSetup()
     {

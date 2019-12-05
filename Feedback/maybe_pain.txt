@@ -1,0 +1,56 @@
+
+hidden tiles change color on trigger
+
+mini map?? triggerable
+
+floating damage numbers
+
+--
+
+enemies
+flip back and forth
+
+gun boi glides
+
+fix drop kick, trigger on change dir
+
+enemies gather up in one spot
+
+health pickups, time? ??
+in secret areas cause useless
+
+background music variation
+
+too much energy
+
+Add sound effect for ""maybe"" pain
+
+--
+
+audio
+rotatio attack
+deeath
+hurt
+
+intro music too loud
+
+collision bugs
+
+fall through map
+
+speed up
+
+lost
+map
+
+health ui
+
+color in hidden
+
+--
+
+Smoother game path, don't get stuck when landing etc
+
+
+
+

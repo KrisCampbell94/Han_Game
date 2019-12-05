@@ -129,7 +129,7 @@ public class GravityPoints : MonoBehaviour
         particle.startSize = (0.55f * alpha);
         particleEmission.rateOverTime = new ParticleSystem.MinMaxCurve(20 * alpha);
 
-        Debug.Log(gravityPoints);
+        // Debug.Log(gravityPoints);
         gravityFlame.transform.localScale = Vector3.Lerp(currentScale, newScale,1 * Time.deltaTime);
         flameRender.color = new Color(flameRender.color.r, flameRender.color.g, flameRender.color.b, alpha);
         
