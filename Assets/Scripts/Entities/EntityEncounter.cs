@@ -18,7 +18,7 @@ public class EntityEncounter : MonoBehaviour
         {
             isEnemyClose = true;
         }
-        if (collider.gameObject.layer == 8)
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             closeToWall = true;
         }
@@ -34,7 +34,7 @@ public class EntityEncounter : MonoBehaviour
         {
             isEnemyClose = false;
         }
-        if (collider.gameObject.layer == 8)
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             closeToWall = false;
         }

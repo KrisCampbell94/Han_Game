@@ -216,7 +216,7 @@ MonoBehaviour:
   attackLocation: {fileID: 8283269718909888566}
   playerTrackerLeft: {fileID: 8283269719480780009}
   playerTrackerRight: {fileID: 8283269719153074464}
-  speed: 0.2
+  speed: 0.8
 --- !u!1 &8283269719153074465
 GameObject:
   m_ObjectHideFlags: 0

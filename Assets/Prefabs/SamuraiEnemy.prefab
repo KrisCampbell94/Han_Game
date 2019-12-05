@@ -334,7 +334,7 @@ MonoBehaviour:
   isPlayerClose: 0
   playerTrackerLeft: {fileID: 1796576250461878803}
   playerTrackerRight: {fileID: 1796576251204110663}
-  speed: 2
+  speed: 6
   moving: 0
   attacking: 0
 --- !u!114 &1796576251446891322

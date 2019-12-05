@@ -5178,7 +5178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 20
   runningMultiplier: 2
-  jumpForce: 12
+  jumpForce: 20
   quickFallForce: -0.5
   attackLocation: {fileID: 4721758065553753511}
 --- !u!114 &4721758065756463025
