@@ -5,4 +5,4 @@ The game involves the philosophical concept of the act of revenge. The famous qu
 Coming soon :)
 
 ## GDD
-https://docs.google.com/document/d/1PNuuVouPj6eSRm4c921wo1nm5h82JFYNQaUID9PjB9s
+[Han Game GDD](https://docs.google.com/document/d/1PNuuVouPj6eSRm4c921wo1nm5h82JFYNQaUID9PjB9s)
