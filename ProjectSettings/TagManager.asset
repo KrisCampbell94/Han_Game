@@ -11,6 +11,8 @@ TagManager:
   - EnemyWeapon
   - PlayerRange
   - WeaponDeflector
+  - SecretTile
+  - Tile
   layers:
   - Default
   - TransparentFX
@@ -47,4 +49,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Damage
+    uniqueID: 2063953509
     locked: 0

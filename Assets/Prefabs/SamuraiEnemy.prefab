@@ -234,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796576251446891321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: -5.45, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1796576251204110663}
@@ -352,6 +352,8 @@ MonoBehaviour:
   hitPoints: 0
   maxHitPoints: 10
   pointsOnKill: 50
+  damagePopup: {fileID: 3955118054097555193, guid: 698e541a48787e14d8da8e24c136cc2c,
+    type: 3}
 --- !u!114 &1796576251446891312
 MonoBehaviour:
   m_ObjectHideFlags: 0

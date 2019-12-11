@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class HitPoints : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class HitPoints : MonoBehaviour
 	public int maxHitPoints = 10;
     public int pointsOnKill = 20;
 	private SpriteRenderer sr;
+    [SerializeField] private Transform damagePopup;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -80,5 +83,15 @@ public class HitPoints : MonoBehaviour
         {
             hitPoints -= pointsToSub;
         }
+        if (this.tag != "Player")
+        {
+            ShowDamage(pointsToSub);
+        }
+    }
+
+    public void ShowDamage(int damage)
+    {
+        damagePopup.transform.GetComponent<TextMeshPro>().SetText(damage.ToString());
+        Instantiate(damagePopup, gameObject.transform.position, Quaternion.identity);
     }
 }
