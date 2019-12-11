@@ -13,6 +13,7 @@ TagManager:
   - WeaponDeflector
   - SecretTile
   - Tile
+  - Background
   layers:
   - Default
   - TransparentFX
