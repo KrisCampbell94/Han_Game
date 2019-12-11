@@ -21,6 +21,7 @@ public class FloatingDamageVisual : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0, 1) * Time.deltaTime;
+        transform.rotation = GameObject.FindWithTag("Player").transform.rotation;
         disappearTimer -= Time.deltaTime;
         if (disappearTimer < 0)
         {
